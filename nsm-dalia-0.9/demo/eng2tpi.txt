@@ -19,7 +19,7 @@ DALIA> l2(tpi).
 Then, if you issue the command:
 
 ==
-DALIA> pf("eng2tpi.txt").
+DALIA> pf("demo/eng2tpi.txt").
 ==
 
 you will have this file displayed in the PROLOG terminal,
