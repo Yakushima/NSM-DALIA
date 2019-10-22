@@ -57,7 +57,10 @@ print ("</script>\n");
 print ("<h1>Semantic Primes (click to add edit sentence examples of this prime)</h1>\n");
 print ("<div class='tabs'>\n");
 foreach (@titles) {
-	print ("<button class='tab' id='".$_."' onclick='editSentences(\"".$_."\", ".$primes{$_}.");' >".$_."</button>\n");
+	$video = `grep -w "$_" videos.txt`;
+	$video =~ s/.*\/(.*)/mp4s\/$1/;
+	print ("<span><video height='64' width='64' src='$video' class='tab' id='".$_."' onclick='editSentences(\"".$_."\", ".$primes{$_}.");'></video><a href=\"https://www.signingsavvy.com/sign/".$_."\">".$_."</a></span>\n");
+		
 }
 print ("</div>\n");
 
@@ -68,7 +71,7 @@ print ("</div>\n");
 
 print "\n";
 
-print ("<h1>Grammar Elements (click to add to current sentence)</h1>\n");
+print ("<h1>Syntactic Frame Elements (click to add to current sentence)</h1>\n");
 print ("<div class='primes'>\n");
 foreach (@titles) {
 	print ("<button class='prime' onclick='addTerminal(\"".lc($_)."\"); return false;'>".lc($_)."</button>\n");
