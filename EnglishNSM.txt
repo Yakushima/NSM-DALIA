@@ -382,7 +382,8 @@ it happens in one moment
 a moment before, a moment after
 at this moment
 
-(FOR) SOME TIME some time before, some time after
+(FOR) SOME TIME
+some time before, some time after
 it happens like this for some time
 someone does this for some time
 [during this time = at this time, for
@@ -394,7 +395,8 @@ a very long time
 for a long time [= for some time, a
 long time]
 
-A SHORT TIME a short time before, a short time after
+A SHORT TIME
+a short time before, a short time after
 a very short time
 for a short time [= for some time, a
  short time]
