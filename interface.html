@@ -28,10 +28,13 @@ function editSentences(newprime) {
 	for (var s = 1; s < arguments.length; s++) {
 		var span = document.createElement('span');
 		div.appendChild(span);
+		var a = document.createElement('a');
+	        a.setAttribute('href', 'https://www.signingsavvy.com/sign/'+arguments[s]);
+		span.appendChild(a);
+		var textNode = document.createTextNode(arguments[s]);
+		a.appendChild(textNode);
 		var br = document.createElement('br');
 		div.appendChild(br);
-		var textNode = document.createTextNode(arguments[s]);
-		span.appendChild(textNode);
 	}
 	var sentence = document.createElement('span');
 	sentence.setAttribute('id', 'newSentence');
@@ -41,182 +44,217 @@ function editSentences(newprime) {
 	sentences.appendChild(div);
 }
 </script>
-<h1>Semantic Primes (click to add edit sentence examples of this prime)</h1>
-<div class='tabs'>
-<span><video height='64' width='64' src='' class='tab' id='NOT~DON’T' onclick='editSentences("NOT~DON’T", "not good, not bad", "not like this", "I don’t know", "someone can’t do this");'></video><a href="https://www.signingsavvy.com/sign/NOT~DON’T">NOT~DON’T</a></span>
-<span><video height='64' width='64' src='' class='tab' id='CAN' onclick='editSentences("CAN", "someone can do something", "someone can’t do something", "someone can’t not do something", "something (good/bad) can happen", "it can be like this: …");'></video><a href="https://www.signingsavvy.com/sign/CAN">CAN</a></span>
-<span><video height='64' width='64' src='mp4s/6973.mp4
-' class='tab' id='BECAUSE' onclick='editSentences("BECAUSE", "because of this", "it happened because this someone", " did something before", "… not because of anything else");'></video><a href="https://www.signingsavvy.com/sign/BECAUSE">BECAUSE</a></span>
-<span><video height='64' width='64' src='mp4s/22847.mp4
-' class='tab' id='IF' onclick='editSentences("IF", "if it happens like this for some time,", " ...,", "if you do this, ...", "if someone does something like this,", " ...");'></video><a href="https://www.signingsavvy.com/sign/IF">IF</a></span>
-<span><video height='64' width='64' src='mp4s/22384.mp4
-' class='tab' id='MAYBE' onclick='editSentences("MAYBE", "maybe it is like this, maybe it is not like this", "maybe someone else can do it");'></video><a href="https://www.signingsavvy.com/sign/MAYBE">MAYBE</a></span>
-<span><video height='64' width='64' src='' class='tab' id='LIKE~AS~WAY' onclick='editSentences("LIKE~AS~WAY", "it happens like this: … it is like this: …", "someone thinks like this: “- -”", "someone like me", "this someone does it like this", "it happens as this someone wants", "… do/say it in this way, not in another", "way");'></video><a href="https://www.signingsavvy.com/sign/LIKE~AS~WAY">LIKE~AS~WAY</a></span>
-<span><video height='64' width='64' src='mp4s/24977.mp4
-' class='tab' id='VERY' onclick='editSentences("VERY", "very big, very small, very good, very", "bad, very far, very near, a very", "short time, a very long time", "I want it very much (=very)", "very very big, very very good, very", "very far, etc.");'></video><a href="https://www.signingsavvy.com/sign/VERY">VERY</a></span>
-<span><video height='64' width='64' src='' class='tab' id='MORE~ANYMORE' onclick='editSentences("MORE~ANYMORE", "someone wants more, someone does more", "someone wants to know/say/think", " more about it", "one more, two more, many more,", " not more", "not living anymore", "not like this anymore");'></video><a href="https://www.signingsavvy.com/sign/MORE~ANYMORE">MORE~ANYMORE</a></span>
-<span><video height='64' width='64' src='' class='tab' id='I~ME' onclick='editSentences("I~ME", "I want to do/know/say something", "I want this, I don’t want this", "I don’t know", "something bad can happen to me", "someone like me");'></video><a href="https://www.signingsavvy.com/sign/I~ME">I~ME</a></span>
-<span><video height='64' width='64' src='mp4s/24020.mp4
-' class='tab' id='YOU' onclick='editSentences("YOU", "I want you to do/know/say something", "something bad can happen to you", "you are someone like me");'></video><a href="https://www.signingsavvy.com/sign/YOU">YOU</a></span>
-<span><video height='64' width='64' src='mp4s/5957.mp4
-' class='tab' id='SOMEONE' onclick='editSentences("SOMEONE", "this someone, the same someone,", " someone else, this other someone", "someone does/says something");'></video><a href="https://www.signingsavvy.com/sign/SOMEONE">SOMEONE</a></span>
-<span><video height='64' width='64' src='mp4s/5957.mp4
-' class='tab' id='SOMETHING' onclick='editSentences("SOMETHING", "~THING", "this something~thing, the same", "something~thing, something else~another something", "something big, something small", "something of one kind");'></video><a href="https://www.signingsavvy.com/sign/SOMETHING">SOMETHING</a></span>
-<span><video height='64' width='64' src='mp4s/26833.mp4
-' class='tab' id='BODY' onclick='editSentences("BODY", "someone’s body, people’s bodies", "part of someone’s body", "a body of one kind, bodies of two", " kinds", "something bad happens inside", " someone’s body", "someone feels something in the body");'></video><a href="https://www.signingsavvy.com/sign/BODY">BODY</a></span>
-<span><video height='64' width='64' src='mp4s/6404.mp4
-' class='tab' id='PEOPLE' onclick='editSentences("PEOPLE", "these people, many people, some", " people, few people", "many people think like this: … people can say ...", "people of one kind");'></video><a href="https://www.signingsavvy.com/sign/PEOPLE">PEOPLE</a></span>
-<span><video height='64' width='64' src='' class='tab' id='KIND' onclick='editSentences("KIND", "this kind, the same kind, another", " kind, this other kind", "something/someone of one kind", "people of one/two/many kinds");'></video><a href="https://www.signingsavvy.com/sign/KIND">KIND</a></span>
-<span><video height='64' width='64' src='' class='tab' id='PART' onclick='editSentences("PART", "part of someone’s body", "this part, the same part, another part,", " this other part", "this something has two/many parts");'></video><a href="https://www.signingsavvy.com/sign/PART">PART</a></span>
-<span><video height='64' width='64' src='mp4s/6032.mp4
-' class='tab' id='WORDS' onclick='editSentences("WORDS", "many words, other words, one word", "words of one kind", "say something with (not with) words,", " say something in other words", "say these words", "these words say something");'></video><a href="https://www.signingsavvy.com/sign/WORDS">WORDS</a></span>
-<span><video height='64' width='64' src='mp4s/21636.mp4
-' class='tab' id='WANT' onclick='editSentences("WANT", "I want this", "someone wants something", "someone wants to do/know/say", " something", "someone wants someone else to do/", " know/say something", "someone wants something to happen", "I want it very much");'></video><a href="https://www.signingsavvy.com/sign/WANT">WANT</a></span>
-<span><video height='64' width='64' src='' class='tab' id='DON’T WANT' onclick='editSentences("DON’T WANT", "I don’t want this", "someone doesn’t want this", "someone doesn’t want to do something", "someone doesn’t want something", " to happen");'></video><a href="https://www.signingsavvy.com/sign/DON’T WANT">DON’T WANT</a></span>
-<span><video height='64' width='64' src='mp4s/6900.mp4
-' class='tab' id='FEEL' onclick='editSentences("FEEL", "someone feels something (good/bad)", "someone feels something (good/bad)", " in part of the body", "someone feels something good/bad", " towards someone else/ something");'></video><a href="https://www.signingsavvy.com/sign/FEEL">FEEL</a></span>
-<span><video height='64' width='64' src='mp4s/22788.mp4
-' class='tab' id='DO' onclick='editSentences("DO", "someone does something (to someone", " else)", "someone does something with", "something else/part of the body", "someone does something with", " someone else", "someone does something good (for", " someone else)/bad (to someone else)", "someone else)/bad (to someone else)");'></video><a href="https://www.signingsavvy.com/sign/DO">DO</a></span>
-<span><video height='64' width='64' src='mp4s/14398.mp4
-' class='tab' id='SAY' onclick='editSentences("SAY", "I say: ...", "someone says something (good/bad)", "(to someone)", "someone says something (good/bad)", "(about someone/something)", "someone says something like this: “- -”", "someone says something with words", "someone says a word to someone");'></video><a href="https://www.signingsavvy.com/sign/SAY">SAY</a></span>
-<span><video height='64' width='64' src='mp4s/21554.mp4
-' class='tab' id='KNOW' onclick='editSentences("KNOW", "I know", "this someone knows it", "this someone knows something (a lot)", "about someone/something", "people can know this", "[I know that ... = it is like this: …, I know", "it]");'></video><a href="https://www.signingsavvy.com/sign/KNOW">KNOW</a></span>
-<span><video height='64' width='64' src='mp4s/8396.mp4
-' class='tab' id='SEE' onclick='editSentences("SEE", "someone sees someone/something (in", "a place)", "people can/can’t see well in this place", "someone/people can/can’t see this something");'></video><a href="https://www.signingsavvy.com/sign/SEE">SEE</a></span>
-<span><video height='64' width='64' src='' class='tab' id='HEAR' onclick='editSentences("HEAR", "someone hears something", "people can feel something bad when", " they hear this word");'></video><a href="https://www.signingsavvy.com/sign/HEAR">HEAR</a></span>
-<span><video height='64' width='64' src='mp4s/24787.mp4
-' class='tab' id='THINK' onclick='editSentences("THINK", "someone thinks about someone else/", " something", "someone thinks something good/bad", " about someone else/something", "someone thinks like this: “- -”", "many people think like this: “- -”");'></video><a href="https://www.signingsavvy.com/sign/THINK">THINK</a></span>
-<span><video height='64' width='64' src='mp4s/9559.mp4
-' class='tab' id='SMALL' onclick='editSentences("SMALL", "something small", "a small place", "very small");'></video><a href="https://www.signingsavvy.com/sign/SMALL">SMALL</a></span>
-<span><video height='64' width='64' src='' class='tab' id='BIG' onclick='editSentences("BIG", "something big", "a big place", "very big");'></video><a href="https://www.signingsavvy.com/sign/BIG">BIG</a></span>
-<span><video height='64' width='64' src='mp4s/21535.mp4
-' class='tab' id='BAD' onclick='editSentences("BAD", "something bad, someone bad", "something bad", "something bad happens", "do something bad (to someone)", "feel something bad", "this is bad", "it is bad if ...");'></video><a href="https://www.signingsavvy.com/sign/BAD">BAD</a></span>
-<span><video height='64' width='64' src='mp4s/21534.mp4
-' class='tab' id='GOOD' onclick='editSentences("GOOD", "something good, someone good", "something good", "something good happens", "do something good (for someone)", "feel something good", "this is good", "it is good if ...");'></video><a href="https://www.signingsavvy.com/sign/GOOD">GOOD</a></span>
-<span><video height='64' width='64' src='mp4s/24977.mp4
-' class='tab' id='TRUE' onclick='editSentences("TRUE", "this is true", "this is not true");'></video><a href="https://www.signingsavvy.com/sign/TRUE">TRUE</a></span>
-<span><video height='64' width='64' src='mp4s/25536.mp4
-' class='tab' id='HAPPEN' onclick='editSentences("HAPPEN", "something happens", "something happens to someone", "something happens to something", "something happens somewhere (in a", " place)", "something happens inside", "someone/something");'></video><a href="https://www.signingsavvy.com/sign/HAPPEN">HAPPEN</a></span>
-<span><video height='64' width='64' src='' class='tab' id='BE (SOMEWHERE)' onclick='editSentences("BE (SOMEWHERE)", "someone is somewhere (in a place)", "something is somewhere (in a place)", "someone is with someone else");'></video><a href="https://www.signingsavvy.com/sign/BE (SOMEWHERE)">BE (SOMEWHERE)</a></span>
-<span><video height='64' width='64' src='mp4s/24811.mp4
-' class='tab' id='LIVE' onclick='editSentences("LIVE", "someone lives for a long time", "many people live in this place", "this someone lives with someone else", "it is good if someone lives like this");'></video><a href="https://www.signingsavvy.com/sign/LIVE">LIVE</a></span>
-<span><video height='64' width='64' src='mp4s/26343.mp4
-' class='tab' id='DIE' onclick='editSentences("DIE", "someone dies at this time", "all people die at some time");'></video><a href="https://www.signingsavvy.com/sign/DIE">DIE</a></span>
-<span><video height='64' width='64' src='' class='tab' id='THERE IS' onclick='editSentences("THERE IS", "there is something in this place", "there is someone in this place", "there are two/many kinds of …");'></video><a href="https://www.signingsavvy.com/sign/THERE IS">THERE IS</a></span>
-<span><video height='64' width='64' src='mp4s/23129.mp4
-' class='tab' id='BE' onclick='editSentences("BE", "(SOMEONE/SOMETHING)", "this someone is someone like me", "this is something of one kind", "this is something big/small", "I know who this someone is");'></video><a href="https://www.signingsavvy.com/sign/BE">BE</a></span>
-<span><video height='64' width='64' src='' class='tab' id='(IS) MINE' onclick='editSentences("(IS) MINE", "this thing (knife, shirt, etc.) is mine", "[this thing is someone else’s =", "someone else can say about this", "thing: “it is mine”]");'></video><a href="https://www.signingsavvy.com/sign/(IS) MINE">(IS) MINE</a></span>
-<span><video height='64' width='64' src='' class='tab' id='MOVE' onclick='editSentences("MOVE", "someone moves (in this place)", "something moves in this place", "parts of this someone’s body move", " as this someone wants");'></video><a href="https://www.signingsavvy.com/sign/MOVE">MOVE</a></span>
-<span><video height='64' width='64' src='mp4s/22598.mp4
-' class='tab' id='TOUCH' onclick='editSentences("TOUCH", "something touches something else", " (somewhere)", "something touches part of someone’s", " body", "someone/people can/can’t touch this", " something");'></video><a href="https://www.signingsavvy.com/sign/TOUCH">TOUCH</a></span>
-<span><video height='64' width='64' src='mp4s/6158.mp4
-' class='tab' id='INSIDE' onclick='editSentences("INSIDE", "inside this something", "inside this someone", "inside part of this someone’s body");'></video><a href="https://www.signingsavvy.com/sign/INSIDE">INSIDE</a></span>
-<span><video height='64' width='64' src='' class='tab' id='PLACE~WHERE~' onclick='editSentences("PLACE~WHERE~", "SOMEWHERE", "(in) this place, (in) the same place,", "somewhere else, (in) this other", "place", "in some places, in many places", "in the place where …");'></video><a href="https://www.signingsavvy.com/sign/PLACE~WHERE~">PLACE~WHERE~</a></span>
-<span><video height='64' width='64' src='mp4s/5873.mp4
-' class='tab' id='HERE' onclick='editSentences("HERE", "something is happening here now");'></video><a href="https://www.signingsavvy.com/sign/HERE">HERE</a></span>
-<span><video height='64' width='64' src='mp4s/24014.mp4
-' class='tab' id='ABOVE' onclick='editSentences("ABOVE", "above this place", "far above this place", "someone above other people");'></video><a href="https://www.signingsavvy.com/sign/ABOVE">ABOVE</a></span>
-<span><video height='64' width='64' src='mp4s/27007.mp4
-' class='tab' id='BELOW' onclick='editSentences("BELOW", "below this place", "far below this place");'></video><a href="https://www.signingsavvy.com/sign/BELOW">BELOW</a></span>
-<span><video height='64' width='64' src='' class='tab' id='ON ONE SIDE' onclick='editSentences("ON ONE SIDE", "on this side, on the same side,", "on one side, on two sides,", " on all sides");'></video><a href="https://www.signingsavvy.com/sign/ON ONE SIDE">ON ONE SIDE</a></span>
-<span><video height='64' width='64' src='mp4s/14713.mp4
-' class='tab' id='NEAR' onclick='editSentences("NEAR", "near this place", "near someone");'></video><a href="https://www.signingsavvy.com/sign/NEAR">NEAR</a></span>
-<span><video height='64' width='64' src='mp4s/23561.mp4
-' class='tab' id='FAR' onclick='editSentences("FAR", "far from this place");'></video><a href="https://www.signingsavvy.com/sign/FAR">FAR</a></span>
-<span><video height='64' width='64' src='' class='tab' id='THIS' onclick='editSentences("THIS", "this someone (something), these", " people, this kind, this part", "at this time, in this place", "because of this", "it is like this: …");'></video><a href="https://www.signingsavvy.com/sign/THIS">THIS</a></span>
-<span><video height='64' width='64' src='' class='tab' id='THE SAME' onclick='editSentences("THE SAME", "the same someone, the same thing,", "the same part, the same kind", "at the same time, in the same place", "someone says/does/thinks/knows/", " wants/feels the same");'></video><a href="https://www.signingsavvy.com/sign/THE SAME">THE SAME</a></span>
-<span><video height='64' width='64' src='' class='tab' id='OTHER~ELSE' onclick='editSentences("OTHER~ELSE", "someone else, something else, at", " another time, somewhere else", "other parts, other kinds", "this other part, this other kind, this", " other someone, this other thing");'></video><a href="https://www.signingsavvy.com/sign/OTHER~ELSE">OTHER~ELSE</a></span>
-<span><video height='64' width='64' src='mp4s/26492.mp4
-' class='tab' id='ONE' onclick='editSentences("ONE", "one someone, one thing, one part,", " one kind", "in one place, at one time", "one of these things/people", "something of one kind", "one more thing");'></video><a href="https://www.signingsavvy.com/sign/ONE">ONE</a></span>
-<span><video height='64' width='64' src='mp4s/26494.mp4
-' class='tab' id='TWO' onclick='editSentences("TWO", "two things, two parts, two kinds", "two of these things/people", "two more things");'></video><a href="https://www.signingsavvy.com/sign/TWO">TWO</a></span>
-<span><video height='64' width='64' src='' class='tab' id='MUCH~MANY' onclick='editSentences("MUCH~MANY", "many people, many things, many", " parts, many kinds", "at many times, in many places", "much of this something (e.g. water)", "much more, many more");'></video><a href="https://www.signingsavvy.com/sign/MUCH~MANY">MUCH~MANY</a></span>
-<span><video height='64' width='64' src='' class='tab' id='ALL' onclick='editSentences("ALL", "all people, all things, all parts, all kinds", "at all times, in all places", "all of this something (e.g. water)");'></video><a href="https://www.signingsavvy.com/sign/ALL">ALL</a></span>
-<span><video height='64' width='64' src='mp4s/23931.mp4
-' class='tab' id='SOME' onclick='editSentences("SOME", "some people, some things, some parts, some kinds", "at some times, in some places", "some of these things/people", "some of this something (e.g. water)");'></video><a href="https://www.signingsavvy.com/sign/SOME">SOME</a></span>
-<span><video height='64' width='64' src='' class='tab' id='LITTLE~FEW' onclick='editSentences("LITTLE~FEW", "few people, few things a little of this something (e.g. water)", "very little, very few");'></video><a href="https://www.signingsavvy.com/sign/LITTLE~FEW">LITTLE~FEW</a></span>
-<span><video height='64' width='64' src='' class='tab' id='TIME~WHEN' onclick='editSentences("TIME~WHEN", " (at) this time, (at) the same time, at", "another time, at this other time, at", "some times, at many times", "at the time when …");'></video><a href="https://www.signingsavvy.com/sign/TIME~WHEN">TIME~WHEN</a></span>
-<span><video height='64' width='64' src='' class='tab' id='NOW' onclick='editSentences("NOW", "something is happening here now", "when I say this now, ...");'></video><a href="https://www.signingsavvy.com/sign/NOW">NOW</a></span>
-<span><video height='64' width='64' src='mp4s/6539.mp4
-' class='tab' id='MOMENT' onclick='editSentences("MOMENT", "it happens in one moment", "a moment before, a moment after", "at this moment");'></video><a href="https://www.signingsavvy.com/sign/MOMENT">MOMENT</a></span>
-<span><video height='64' width='64' src='' class='tab' id='(FOR) SOME TIME' onclick='editSentences("(FOR) SOME TIME", "some time before, some time after", "it happens like this for some time", "someone does this for some time", "[during this time = at this time, for", " some time]");'></video><a href="https://www.signingsavvy.com/sign/(FOR) SOME TIME">(FOR) SOME TIME</a></span>
-<span><video height='64' width='64' src='' class='tab' id='A LONG TIME' onclick='editSentences("A LONG TIME", "a long time before, a long time after", "a very long time", "for a long time [= for some time, a", "long time]");'></video><a href="https://www.signingsavvy.com/sign/A LONG TIME">A LONG TIME</a></span>
-<span><video height='64' width='64' src='' class='tab' id='A SHORT TIME' onclick='editSentences("A SHORT TIME", "a short time before, a short time after", "a very short time", "for a short time [= for some time, a", " short time]");'></video><a href="https://www.signingsavvy.com/sign/A SHORT TIME">A SHORT TIME</a></span>
-<span><video height='64' width='64' src='' class='tab' id='BEFORE' onclick='editSentences("BEFORE", "before this, some time before, a short", "time before, a long time before");'></video><a href="https://www.signingsavvy.com/sign/BEFORE">BEFORE</a></span>
-<span><video height='64' width='64' src='mp4s/9722.mp4
-' class='tab' id='AFTER' onclick='editSentences("AFTER", "after this, some time after, a short", "time a");'></video><a href="https://www.signingsavvy.com/sign/AFTER">AFTER</a></span>
+<h1>Semantic Primes (click to add, edit sentence examples of this prime)</h1>
+<div>
+<button><video height='64' width='64' src='' id='NOT~DON’T' onclick='editSentences("NOT~DON’T", "not good", "not bad", "not like this", "I don’t know", "someone can’t do this");'></video><a href="https://www.signingsavvy.com/sign/NOT~DON’T">NOT~DON’T</a></button>
+<button><video height='64' width='64' src='' id='CAN' onclick='editSentences("CAN", "someone can do something", "someone can’t do something", "someone can’t not do something", "something (good/bad) can happen", "it can be like this: …");'></video><a href="https://www.signingsavvy.com/sign/CAN">CAN</a></button>
+<button><video height='64' width='64' src='mp4s/6973.mp4
+' id='BECAUSE' onclick='editSentences("BECAUSE", "because of this", "it happened because this someone did something before", "… not because of anything else");'></video><a href="https://www.signingsavvy.com/sign/BECAUSE">BECAUSE</a></button>
+<button><video height='64' width='64' src='mp4s/22847.mp4
+' id='IF' onclick='editSentences("IF", "if it happens like this for some time, ...,", "if you do this, ...", "if someone does something like this, ...");'></video><a href="https://www.signingsavvy.com/sign/IF">IF</a></button>
+<button><video height='64' width='64' src='mp4s/22384.mp4
+' id='MAYBE' onclick='editSentences("MAYBE", "maybe it is like this", "maybe it is not like this", "maybe someone else can do it");'></video><a href="https://www.signingsavvy.com/sign/MAYBE">MAYBE</a></button>
+<button><video height='64' width='64' src='' id='LIKE~AS~WAY' onclick='editSentences("LIKE~AS~WAY", "it happens like this: … it is like this: …", "someone thinks like this: “- -”", "someone like me", "this someone does it like this", "it happens as this someone wants", "… do/say it in this way, not in another way");'></video><a href="https://www.signingsavvy.com/sign/LIKE~AS~WAY">LIKE~AS~WAY</a></button>
+<button><video height='64' width='64' src='mp4s/24977.mp4
+' id='VERY' onclick='editSentences("VERY", "very big", "very small", "very good", "very bad", "very far", "very near", "a very short time", "a very long time", "I want it very much (=very)", "very very big", "very very good", "very very far", "etc.");'></video><a href="https://www.signingsavvy.com/sign/VERY">VERY</a></button>
+<button><video height='64' width='64' src='' id='MORE~ANYMORE' onclick='editSentences("MORE~ANYMORE", "someone wants more", "someone does more", "someone wants to know/say/think more about it", "one more", "two more", "many more", "not more", "not living anymore", "not like this anymore");'></video><a href="https://www.signingsavvy.com/sign/MORE~ANYMORE">MORE~ANYMORE</a></button>
+<button><video height='64' width='64' src='' id='I~ME' onclick='editSentences("I~ME", "I want to do/know/say something", "I want this", "I don’t want this", "I don’t know", "something bad can happen to me", "someone like me");'></video><a href="https://www.signingsavvy.com/sign/I~ME">I~ME</a></button>
+<button><video height='64' width='64' src='mp4s/24020.mp4
+' id='YOU' onclick='editSentences("YOU", "I want you to do/know/say something", "something bad can happen to you", "you are someone like me");'></video><a href="https://www.signingsavvy.com/sign/YOU">YOU</a></button>
+<button><video height='64' width='64' src='mp4s/5957.mp4
+' id='SOMEONE' onclick='editSentences("SOMEONE", "this someone", "the same someone", "someone else", "this other someone", "someone does/says something");'></video><a href="https://www.signingsavvy.com/sign/SOMEONE">SOMEONE</a></button>
+<button><video height='64' width='64' src='' id='SOMETHING~THING' onclick='editSentences("SOMETHING~THING", "this something~thing", "the same something~thing", "something else~another something", "something big", "something small", "something of one kind");'></video><a href="https://www.signingsavvy.com/sign/SOMETHING~THING">SOMETHING~THING</a></button>
+<button><video height='64' width='64' src='mp4s/26833.mp4
+' id='BODY' onclick='editSentences("BODY", "someone’s body", "people’s bodies", "part of someone’s body", "a body of one kind", "bodies of two kinds", "something bad happens inside someone’s body", "someone feels something in the body");'></video><a href="https://www.signingsavvy.com/sign/BODY">BODY</a></button>
+<button><video height='64' width='64' src='mp4s/6404.mp4
+' id='PEOPLE' onclick='editSentences("PEOPLE", "these people", "many people", "some people", "few people", "many people think like this: … people can say ...", "people of one kind");'></video><a href="https://www.signingsavvy.com/sign/PEOPLE">PEOPLE</a></button>
+<button><video height='64' width='64' src='' id='KIND' onclick='editSentences("KIND", "this kind", "the same kind", "another kind", "this other kind", "something/someone of one kind", "people of one/two/many kinds");'></video><a href="https://www.signingsavvy.com/sign/KIND">KIND</a></button>
+<button><video height='64' width='64' src='' id='PART' onclick='editSentences("PART", "part of someone’s body", "this part", "the same part", "another part", "this other part", "this something has two/many parts");'></video><a href="https://www.signingsavvy.com/sign/PART">PART</a></button>
+<button><video height='64' width='64' src='mp4s/6032.mp4
+' id='WORDS' onclick='editSentences("WORDS", "many words", "other words", "one word", "words of one kind", "say something with (not with) words", "say something in other words", "say these words", "these words say something");'></video><a href="https://www.signingsavvy.com/sign/WORDS">WORDS</a></button>
+<button><video height='64' width='64' src='mp4s/21636.mp4
+' id='WANT' onclick='editSentences("WANT", "I want this", "someone wants something", "someone wants to do/know/say something", "someone wants someone else to do/know/say something", "someone wants something to happen", "I want it very much");'></video><a href="https://www.signingsavvy.com/sign/WANT">WANT</a></button>
+<button><video height='64' width='64' src='' id='DON’T WANT' onclick='editSentences("DON’T WANT", "I don’t want this", "someone doesn’t want this", "someone doesn’t want to do something", "someone doesn’t want something to happen");'></video><a href="https://www.signingsavvy.com/sign/DON’T WANT">DON’T WANT</a></button>
+<button><video height='64' width='64' src='mp4s/6900.mp4
+' id='FEEL' onclick='editSentences("FEEL", "someone feels something (good/bad)", "someone feels something (good/bad) in part of the body", "someone feels something good/bad towards someone else/ something");'></video><a href="https://www.signingsavvy.com/sign/FEEL">FEEL</a></button>
+<button><video height='64' width='64' src='mp4s/22788.mp4
+' id='DO' onclick='editSentences("DO", "someone does something (to someone else)", "someone does something with", "something else/part of the body", "someone does something with someone else", "someone does something good (for someone else)/bad (to someone else)", "someone else)/bad (to someone else)");'></video><a href="https://www.signingsavvy.com/sign/DO">DO</a></button>
+<button><video height='64' width='64' src='mp4s/14398.mp4
+' id='SAY' onclick='editSentences("SAY", "I say: ...", "someone says something (good/bad)", "(to someone)", "someone says something (good/bad)", "(about someone/something)", "someone says something like this: “- -”", "someone says something with words", "someone says a word to someone");'></video><a href="https://www.signingsavvy.com/sign/SAY">SAY</a></button>
+<button><video height='64' width='64' src='mp4s/21554.mp4
+' id='KNOW' onclick='editSentences("KNOW", "I know", "this someone knows it", "this someone knows something (a lot)", "about someone/something", "people can know this", "[I know that ... = it is like this: …, I know", "it]");'></video><a href="https://www.signingsavvy.com/sign/KNOW">KNOW</a></button>
+<button><video height='64' width='64' src='mp4s/8396.mp4
+' id='SEE' onclick='editSentences("SEE", "someone sees someone/something (in", "a place)", "people can/can’t see well in this place", "someone/people can/can’t see this something");'></video><a href="https://www.signingsavvy.com/sign/SEE">SEE</a></button>
+<button><video height='64' width='64' src='' id='HEAR' onclick='editSentences("HEAR", "someone hears something", "people can feel something bad when they hear this word");'></video><a href="https://www.signingsavvy.com/sign/HEAR">HEAR</a></button>
+<button><video height='64' width='64' src='mp4s/24787.mp4
+' id='THINK' onclick='editSentences("THINK", "someone thinks about someone else/something", "someone thinks something good/bad about someone else/something", "someone thinks like this: “- -”", "many people think like this: “- -”");'></video><a href="https://www.signingsavvy.com/sign/THINK">THINK</a></button>
+<button><video height='64' width='64' src='mp4s/9559.mp4
+' id='SMALL' onclick='editSentences("SMALL", "something small", "a small place", "very small");'></video><a href="https://www.signingsavvy.com/sign/SMALL">SMALL</a></button>
+<button><video height='64' width='64' src='' id='BIG' onclick='editSentences("BIG", "something big", "a big place", "very big");'></video><a href="https://www.signingsavvy.com/sign/BIG">BIG</a></button>
+<button><video height='64' width='64' src='mp4s/21535.mp4
+' id='BAD' onclick='editSentences("BAD", "something bad", "someone bad", "something bad", "something bad happens", "do something bad (to someone)", "feel something bad", "this is bad", "it is bad if ...");'></video><a href="https://www.signingsavvy.com/sign/BAD">BAD</a></button>
+<button><video height='64' width='64' src='mp4s/21534.mp4
+' id='GOOD' onclick='editSentences("GOOD", "something good", "someone good", "something good", "something good happens", "do something good (for someone)", "feel something good", "this is good", "it is good if ...");'></video><a href="https://www.signingsavvy.com/sign/GOOD">GOOD</a></button>
+<button><video height='64' width='64' src='mp4s/24977.mp4
+' id='TRUE' onclick='editSentences("TRUE", "this is true", "this is not true");'></video><a href="https://www.signingsavvy.com/sign/TRUE">TRUE</a></button>
+<button><video height='64' width='64' src='mp4s/25536.mp4
+' id='HAPPEN' onclick='editSentences("HAPPEN", "something happens", "something happens to someone", "something happens to something", "something happens somewhere (in a place)", "something happens inside someone/something");'></video><a href="https://www.signingsavvy.com/sign/HAPPEN">HAPPEN</a></button>
+<button><video height='64' width='64' src='' id='BE (SOMEWHERE)' onclick='editSentences("BE (SOMEWHERE)", "someone is somewhere (in a place)", "something is somewhere (in a place)", "someone is with someone else");'></video><a href="https://www.signingsavvy.com/sign/BE (SOMEWHERE)">BE (SOMEWHERE)</a></button>
+<button><video height='64' width='64' src='mp4s/24811.mp4
+' id='LIVE' onclick='editSentences("LIVE", "someone lives for a long time", "many people live in this place", "this someone lives with someone else", "it is good if someone lives like this");'></video><a href="https://www.signingsavvy.com/sign/LIVE">LIVE</a></button>
+<button><video height='64' width='64' src='mp4s/26343.mp4
+' id='DIE' onclick='editSentences("DIE", "someone dies at this time", "all people die at some time");'></video><a href="https://www.signingsavvy.com/sign/DIE">DIE</a></button>
+<button><video height='64' width='64' src='' id='THERE IS' onclick='editSentences("THERE IS", "there is something in this place", "there is someone in this place", "there are two/many kinds of …");'></video><a href="https://www.signingsavvy.com/sign/THERE IS">THERE IS</a></button>
+<button><video height='64' width='64' src='mp4s/23129.mp4
+' id='BE' onclick='editSentences("BE", "(SOMEONE/SOMETHING)", "this someone is someone like me", "this is something of one kind", "this is something big/small", "I know who this someone is");'></video><a href="https://www.signingsavvy.com/sign/BE">BE</a></button>
+<button><video height='64' width='64' src='' id='(IS) MINE' onclick='editSentences("(IS) MINE", "this thing (knife, shirt, etc.) is mine", "[this thing is someone else’s = someone else can say about this thing: “it is mine”]");'></video><a href="https://www.signingsavvy.com/sign/(IS) MINE">(IS) MINE</a></button>
+<button><video height='64' width='64' src='' id='MOVE' onclick='editSentences("MOVE", "someone moves (in this place)", "something moves in this place", "parts of this someone’s body move as this someone wants");'></video><a href="https://www.signingsavvy.com/sign/MOVE">MOVE</a></button>
+<button><video height='64' width='64' src='mp4s/22598.mp4
+' id='TOUCH' onclick='editSentences("TOUCH", "something touches something else (somewhere)", "something touches part of someone’s body", "someone/people can/can’t touch this something");'></video><a href="https://www.signingsavvy.com/sign/TOUCH">TOUCH</a></button>
+<button><video height='64' width='64' src='mp4s/6158.mp4
+' id='INSIDE' onclick='editSentences("INSIDE", "inside this something", "inside this someone", "inside part of this someone’s body");'></video><a href="https://www.signingsavvy.com/sign/INSIDE">INSIDE</a></button>
+<button><video height='64' width='64' src='' id='PLACE~WHERE~SOMEWHERE' onclick='editSentences("PLACE~WHERE~SOMEWHERE", "(in) this place", "(in) the same place", "somewhere else", "(in) this other", "place", "in some places", "in many places", "in the place where …");'></video><a href="https://www.signingsavvy.com/sign/PLACE~WHERE~SOMEWHERE">PLACE~WHERE~SOMEWHERE</a></button>
+<button><video height='64' width='64' src='mp4s/5873.mp4
+' id='HERE' onclick='editSentences("HERE", "something is happening here now");'></video><a href="https://www.signingsavvy.com/sign/HERE">HERE</a></button>
+<button><video height='64' width='64' src='mp4s/24014.mp4
+' id='ABOVE' onclick='editSentences("ABOVE", "above this place", "far above this place", "someone above other people");'></video><a href="https://www.signingsavvy.com/sign/ABOVE">ABOVE</a></button>
+<button><video height='64' width='64' src='mp4s/27007.mp4
+' id='BELOW' onclick='editSentences("BELOW", "below this place", "far below this place");'></video><a href="https://www.signingsavvy.com/sign/BELOW">BELOW</a></button>
+<button><video height='64' width='64' src='' id='ON ONE SIDE' onclick='editSentences("ON ONE SIDE", "on this side", "on the same side", "on one side", "on two sides", "on all sides");'></video><a href="https://www.signingsavvy.com/sign/ON ONE SIDE">ON ONE SIDE</a></button>
+<button><video height='64' width='64' src='mp4s/14713.mp4
+' id='NEAR' onclick='editSentences("NEAR", "near this place", "near someone");'></video><a href="https://www.signingsavvy.com/sign/NEAR">NEAR</a></button>
+<button><video height='64' width='64' src='mp4s/23561.mp4
+' id='FAR' onclick='editSentences("FAR", "far from this place");'></video><a href="https://www.signingsavvy.com/sign/FAR">FAR</a></button>
+<button><video height='64' width='64' src='' id='THIS' onclick='editSentences("THIS", "this someone (something)", "these people", "this kind", "this part", "at this time", "in this place", "because of this", "it is like this: …");'></video><a href="https://www.signingsavvy.com/sign/THIS">THIS</a></button>
+<button><video height='64' width='64' src='' id='THE SAME' onclick='editSentences("THE SAME", "the same someone", "the same thing", "the same part", "the same kind", "at the same time", "in the same place", "someone says/does/thinks/knows/wants/feels the same");'></video><a href="https://www.signingsavvy.com/sign/THE SAME">THE SAME</a></button>
+<button><video height='64' width='64' src='' id='OTHER~ELSE' onclick='editSentences("OTHER~ELSE", "someone else", "something else", "at another time", "somewhere else", "other parts", "other kinds", "this other part", "this other kind", "this other someone", "this other thing");'></video><a href="https://www.signingsavvy.com/sign/OTHER~ELSE">OTHER~ELSE</a></button>
+<button><video height='64' width='64' src='mp4s/26492.mp4
+' id='ONE' onclick='editSentences("ONE", "one someone", "one thing", "one part", "one kind", "in one place", "at one time", "one of these things/people", "something of one kind", "one more thing");'></video><a href="https://www.signingsavvy.com/sign/ONE">ONE</a></button>
+<button><video height='64' width='64' src='mp4s/26494.mp4
+' id='TWO' onclick='editSentences("TWO", "two things", "two parts", "two kinds", "two of these things/people", "two more things");'></video><a href="https://www.signingsavvy.com/sign/TWO">TWO</a></button>
+<button><video height='64' width='64' src='' id='MUCH~MANY' onclick='editSentences("MUCH~MANY", "many people", "many things", "many parts", "many kinds", "at many times", "in many places", "much of this something (e.g. water)", "much more", "many more");'></video><a href="https://www.signingsavvy.com/sign/MUCH~MANY">MUCH~MANY</a></button>
+<button><video height='64' width='64' src='' id='ALL' onclick='editSentences("ALL", "all people", "all things", "all parts", "all kinds", "at all times", "in all places", "all of this something (e.g. water)");'></video><a href="https://www.signingsavvy.com/sign/ALL">ALL</a></button>
+<button><video height='64' width='64' src='mp4s/23931.mp4
+' id='SOME' onclick='editSentences("SOME", "some people", "some things", "some parts", "some kinds", "at some times", "in some places", "some of these things/people", "some of this something (e.g. water)");'></video><a href="https://www.signingsavvy.com/sign/SOME">SOME</a></button>
+<button><video height='64' width='64' src='' id='LITTLE~FEW' onclick='editSentences("LITTLE~FEW", "few people", "few things a little of this something (e.g. water)", "very little", "very few");'></video><a href="https://www.signingsavvy.com/sign/LITTLE~FEW">LITTLE~FEW</a></button>
+<button><video height='64' width='64' src='' id='TIME~WHEN' onclick='editSentences("TIME~WHEN", "(at) this time", "(at) the same time", "at another time", "at this other time", "at some times", "at many times", "at the time when …");'></video><a href="https://www.signingsavvy.com/sign/TIME~WHEN">TIME~WHEN</a></button>
+<button><video height='64' width='64' src='' id='NOW' onclick='editSentences("NOW", "something is happening here now", "when I say this now, ...");'></video><a href="https://www.signingsavvy.com/sign/NOW">NOW</a></button>
+<button><video height='64' width='64' src='mp4s/6539.mp4
+' id='MOMENT' onclick='editSentences("MOMENT", "it happens in one moment", "a moment before", "a moment after", "at this moment");'></video><a href="https://www.signingsavvy.com/sign/MOMENT">MOMENT</a></button>
+<button><video height='64' width='64' src='' id='(FOR) SOME TIME' onclick='editSentences("(FOR) SOME TIME", "some time before", "some time after", "it happens like this for some time", "someone does this for some time", "[during this time = at this time, for some time]");'></video><a href="https://www.signingsavvy.com/sign/(FOR) SOME TIME">(FOR) SOME TIME</a></button>
+<button><video height='64' width='64' src='' id='A LONG TIME' onclick='editSentences("A LONG TIME", "a long time before", "a long time after", "a very long time", "for a long time [= for some time, a long time]");'></video><a href="https://www.signingsavvy.com/sign/A LONG TIME">A LONG TIME</a></button>
+<button><video height='64' width='64' src='' id='A SHORT TIME' onclick='editSentences("A SHORT TIME", "a short time before", "a short time after", "a very short time", "for a short time [= for some time, a short time]");'></video><a href="https://www.signingsavvy.com/sign/A SHORT TIME">A SHORT TIME</a></button>
+<button><video height='64' width='64' src='' id='BEFORE' onclick='editSentences("BEFORE", "before this", "some time before", "a short time before", "a long time before");'></video><a href="https://www.signingsavvy.com/sign/BEFORE">BEFORE</a></button>
+<button><video height='64' width='64' src='mp4s/9722.mp4
+' id='AFTER' onclick='editSentences("AFTER", "after this", "some time after", "a short time after", "a long time after");'></video><a href="https://www.signingsavvy.com/sign/AFTER">AFTER</a></button>
 </div>
 
 <div id='sentences'>
 </div>
 
 <h1>Syntactic Frame Elements (click to add to current sentence)</h1>
-<div class='primes'>
-<button class='prime' onclick='addTerminal("not~don’t"); return false;'>not~don’t</button>
-<button class='prime' onclick='addTerminal("can"); return false;'>can</button>
-<button class='prime' onclick='addTerminal("because"); return false;'>because</button>
-<button class='prime' onclick='addTerminal("if"); return false;'>if</button>
-<button class='prime' onclick='addTerminal("maybe"); return false;'>maybe</button>
-<button class='prime' onclick='addTerminal("like~as~way"); return false;'>like~as~way</button>
-<button class='prime' onclick='addTerminal("very"); return false;'>very</button>
-<button class='prime' onclick='addTerminal("more~anymore"); return false;'>more~anymore</button>
-<button class='prime' onclick='addTerminal("i~me"); return false;'>i~me</button>
-<button class='prime' onclick='addTerminal("you"); return false;'>you</button>
-<button class='prime' onclick='addTerminal("someone"); return false;'>someone</button>
-<button class='prime' onclick='addTerminal("something"); return false;'>something</button>
-<button class='prime' onclick='addTerminal("body"); return false;'>body</button>
-<button class='prime' onclick='addTerminal("people"); return false;'>people</button>
-<button class='prime' onclick='addTerminal("kind"); return false;'>kind</button>
-<button class='prime' onclick='addTerminal("part"); return false;'>part</button>
-<button class='prime' onclick='addTerminal("words"); return false;'>words</button>
-<button class='prime' onclick='addTerminal("want"); return false;'>want</button>
-<button class='prime' onclick='addTerminal("don’t want"); return false;'>don’t want</button>
-<button class='prime' onclick='addTerminal("feel"); return false;'>feel</button>
-<button class='prime' onclick='addTerminal("do"); return false;'>do</button>
-<button class='prime' onclick='addTerminal("say"); return false;'>say</button>
-<button class='prime' onclick='addTerminal("know"); return false;'>know</button>
-<button class='prime' onclick='addTerminal("see"); return false;'>see</button>
-<button class='prime' onclick='addTerminal("hear"); return false;'>hear</button>
-<button class='prime' onclick='addTerminal("think"); return false;'>think</button>
-<button class='prime' onclick='addTerminal("small"); return false;'>small</button>
-<button class='prime' onclick='addTerminal("big"); return false;'>big</button>
-<button class='prime' onclick='addTerminal("bad"); return false;'>bad</button>
-<button class='prime' onclick='addTerminal("good"); return false;'>good</button>
-<button class='prime' onclick='addTerminal("true"); return false;'>true</button>
-<button class='prime' onclick='addTerminal("happen"); return false;'>happen</button>
-<button class='prime' onclick='addTerminal("be (somewhere)"); return false;'>be (somewhere)</button>
-<button class='prime' onclick='addTerminal("live"); return false;'>live</button>
-<button class='prime' onclick='addTerminal("die"); return false;'>die</button>
-<button class='prime' onclick='addTerminal("there is"); return false;'>there is</button>
-<button class='prime' onclick='addTerminal("be"); return false;'>be</button>
-<button class='prime' onclick='addTerminal("(is) mine"); return false;'>(is) mine</button>
-<button class='prime' onclick='addTerminal("move"); return false;'>move</button>
-<button class='prime' onclick='addTerminal("touch"); return false;'>touch</button>
-<button class='prime' onclick='addTerminal("inside"); return false;'>inside</button>
-<button class='prime' onclick='addTerminal("place~where~"); return false;'>place~where~</button>
-<button class='prime' onclick='addTerminal("here"); return false;'>here</button>
-<button class='prime' onclick='addTerminal("above"); return false;'>above</button>
-<button class='prime' onclick='addTerminal("below"); return false;'>below</button>
-<button class='prime' onclick='addTerminal("on one side"); return false;'>on one side</button>
-<button class='prime' onclick='addTerminal("near"); return false;'>near</button>
-<button class='prime' onclick='addTerminal("far"); return false;'>far</button>
-<button class='prime' onclick='addTerminal("this"); return false;'>this</button>
-<button class='prime' onclick='addTerminal("the same"); return false;'>the same</button>
-<button class='prime' onclick='addTerminal("other~else"); return false;'>other~else</button>
-<button class='prime' onclick='addTerminal("one"); return false;'>one</button>
-<button class='prime' onclick='addTerminal("two"); return false;'>two</button>
-<button class='prime' onclick='addTerminal("much~many"); return false;'>much~many</button>
-<button class='prime' onclick='addTerminal("all"); return false;'>all</button>
-<button class='prime' onclick='addTerminal("some"); return false;'>some</button>
-<button class='prime' onclick='addTerminal("little~few"); return false;'>little~few</button>
-<button class='prime' onclick='addTerminal("time~when"); return false;'>time~when</button>
-<button class='prime' onclick='addTerminal("now"); return false;'>now</button>
-<button class='prime' onclick='addTerminal("moment"); return false;'>moment</button>
-<button class='prime' onclick='addTerminal("(for) some time"); return false;'>(for) some time</button>
-<button class='prime' onclick='addTerminal("a long time"); return false;'>a long time</button>
-<button class='prime' onclick='addTerminal("a short time"); return false;'>a short time</button>
-<button class='prime' onclick='addTerminal("before"); return false;'>before</button>
-<button class='prime' onclick='addTerminal("after"); return false;'>after</button>
+<div>
+<button onclick='addTerminal("NOT~DON’T"); return false;'><video height='64' width='64' src='' id='NOT~DON’T' onclick='addTerminal("NOT~DON’T"); return false;'></video><a href="https://www.signingsavvy.com/sign/NOT~DON’T">NOT~DON’T</a></button>
+<button onclick='addTerminal("CAN"); return false;'><video height='64' width='64' src='' id='CAN' onclick='addTerminal("CAN"); return false;'></video><a href="https://www.signingsavvy.com/sign/CAN">CAN</a></button>
+<button onclick='addTerminal("BECAUSE"); return false;'><video height='64' width='64' src='mp4s/6973.mp4
+' id='BECAUSE' onclick='addTerminal("BECAUSE"); return false;'></video><a href="https://www.signingsavvy.com/sign/BECAUSE">BECAUSE</a></button>
+<button onclick='addTerminal("IF"); return false;'><video height='64' width='64' src='mp4s/22847.mp4
+' id='IF' onclick='addTerminal("IF"); return false;'></video><a href="https://www.signingsavvy.com/sign/IF">IF</a></button>
+<button onclick='addTerminal("MAYBE"); return false;'><video height='64' width='64' src='mp4s/22384.mp4
+' id='MAYBE' onclick='addTerminal("MAYBE"); return false;'></video><a href="https://www.signingsavvy.com/sign/MAYBE">MAYBE</a></button>
+<button onclick='addTerminal("LIKE~AS~WAY"); return false;'><video height='64' width='64' src='' id='LIKE~AS~WAY' onclick='addTerminal("LIKE~AS~WAY"); return false;'></video><a href="https://www.signingsavvy.com/sign/LIKE~AS~WAY">LIKE~AS~WAY</a></button>
+<button onclick='addTerminal("VERY"); return false;'><video height='64' width='64' src='mp4s/24977.mp4
+' id='VERY' onclick='addTerminal("VERY"); return false;'></video><a href="https://www.signingsavvy.com/sign/VERY">VERY</a></button>
+<button onclick='addTerminal("MORE~ANYMORE"); return false;'><video height='64' width='64' src='' id='MORE~ANYMORE' onclick='addTerminal("MORE~ANYMORE"); return false;'></video><a href="https://www.signingsavvy.com/sign/MORE~ANYMORE">MORE~ANYMORE</a></button>
+<button onclick='addTerminal("I~ME"); return false;'><video height='64' width='64' src='' id='I~ME' onclick='addTerminal("I~ME"); return false;'></video><a href="https://www.signingsavvy.com/sign/I~ME">I~ME</a></button>
+<button onclick='addTerminal("YOU"); return false;'><video height='64' width='64' src='mp4s/24020.mp4
+' id='YOU' onclick='addTerminal("YOU"); return false;'></video><a href="https://www.signingsavvy.com/sign/YOU">YOU</a></button>
+<button onclick='addTerminal("SOMEONE"); return false;'><video height='64' width='64' src='mp4s/5957.mp4
+' id='SOMEONE' onclick='addTerminal("SOMEONE"); return false;'></video><a href="https://www.signingsavvy.com/sign/SOMEONE">SOMEONE</a></button>
+<button onclick='addTerminal("SOMETHING~THING"); return false;'><video height='64' width='64' src='' id='SOMETHING~THING' onclick='addTerminal("SOMETHING~THING"); return false;'></video><a href="https://www.signingsavvy.com/sign/SOMETHING~THING">SOMETHING~THING</a></button>
+<button onclick='addTerminal("BODY"); return false;'><video height='64' width='64' src='mp4s/26833.mp4
+' id='BODY' onclick='addTerminal("BODY"); return false;'></video><a href="https://www.signingsavvy.com/sign/BODY">BODY</a></button>
+<button onclick='addTerminal("PEOPLE"); return false;'><video height='64' width='64' src='mp4s/6404.mp4
+' id='PEOPLE' onclick='addTerminal("PEOPLE"); return false;'></video><a href="https://www.signingsavvy.com/sign/PEOPLE">PEOPLE</a></button>
+<button onclick='addTerminal("KIND"); return false;'><video height='64' width='64' src='' id='KIND' onclick='addTerminal("KIND"); return false;'></video><a href="https://www.signingsavvy.com/sign/KIND">KIND</a></button>
+<button onclick='addTerminal("PART"); return false;'><video height='64' width='64' src='' id='PART' onclick='addTerminal("PART"); return false;'></video><a href="https://www.signingsavvy.com/sign/PART">PART</a></button>
+<button onclick='addTerminal("WORDS"); return false;'><video height='64' width='64' src='mp4s/6032.mp4
+' id='WORDS' onclick='addTerminal("WORDS"); return false;'></video><a href="https://www.signingsavvy.com/sign/WORDS">WORDS</a></button>
+<button onclick='addTerminal("WANT"); return false;'><video height='64' width='64' src='mp4s/21636.mp4
+' id='WANT' onclick='addTerminal("WANT"); return false;'></video><a href="https://www.signingsavvy.com/sign/WANT">WANT</a></button>
+<button onclick='addTerminal("DON’T WANT"); return false;'><video height='64' width='64' src='' id='DON’T WANT' onclick='addTerminal("DON’T WANT"); return false;'></video><a href="https://www.signingsavvy.com/sign/DON’T WANT">DON’T WANT</a></button>
+<button onclick='addTerminal("FEEL"); return false;'><video height='64' width='64' src='mp4s/6900.mp4
+' id='FEEL' onclick='addTerminal("FEEL"); return false;'></video><a href="https://www.signingsavvy.com/sign/FEEL">FEEL</a></button>
+<button onclick='addTerminal("DO"); return false;'><video height='64' width='64' src='mp4s/22788.mp4
+' id='DO' onclick='addTerminal("DO"); return false;'></video><a href="https://www.signingsavvy.com/sign/DO">DO</a></button>
+<button onclick='addTerminal("SAY"); return false;'><video height='64' width='64' src='mp4s/14398.mp4
+' id='SAY' onclick='addTerminal("SAY"); return false;'></video><a href="https://www.signingsavvy.com/sign/SAY">SAY</a></button>
+<button onclick='addTerminal("KNOW"); return false;'><video height='64' width='64' src='mp4s/21554.mp4
+' id='KNOW' onclick='addTerminal("KNOW"); return false;'></video><a href="https://www.signingsavvy.com/sign/KNOW">KNOW</a></button>
+<button onclick='addTerminal("SEE"); return false;'><video height='64' width='64' src='mp4s/8396.mp4
+' id='SEE' onclick='addTerminal("SEE"); return false;'></video><a href="https://www.signingsavvy.com/sign/SEE">SEE</a></button>
+<button onclick='addTerminal("HEAR"); return false;'><video height='64' width='64' src='' id='HEAR' onclick='addTerminal("HEAR"); return false;'></video><a href="https://www.signingsavvy.com/sign/HEAR">HEAR</a></button>
+<button onclick='addTerminal("THINK"); return false;'><video height='64' width='64' src='mp4s/24787.mp4
+' id='THINK' onclick='addTerminal("THINK"); return false;'></video><a href="https://www.signingsavvy.com/sign/THINK">THINK</a></button>
+<button onclick='addTerminal("SMALL"); return false;'><video height='64' width='64' src='mp4s/9559.mp4
+' id='SMALL' onclick='addTerminal("SMALL"); return false;'></video><a href="https://www.signingsavvy.com/sign/SMALL">SMALL</a></button>
+<button onclick='addTerminal("BIG"); return false;'><video height='64' width='64' src='' id='BIG' onclick='addTerminal("BIG"); return false;'></video><a href="https://www.signingsavvy.com/sign/BIG">BIG</a></button>
+<button onclick='addTerminal("BAD"); return false;'><video height='64' width='64' src='mp4s/21535.mp4
+' id='BAD' onclick='addTerminal("BAD"); return false;'></video><a href="https://www.signingsavvy.com/sign/BAD">BAD</a></button>
+<button onclick='addTerminal("GOOD"); return false;'><video height='64' width='64' src='mp4s/21534.mp4
+' id='GOOD' onclick='addTerminal("GOOD"); return false;'></video><a href="https://www.signingsavvy.com/sign/GOOD">GOOD</a></button>
+<button onclick='addTerminal("TRUE"); return false;'><video height='64' width='64' src='mp4s/24977.mp4
+' id='TRUE' onclick='addTerminal("TRUE"); return false;'></video><a href="https://www.signingsavvy.com/sign/TRUE">TRUE</a></button>
+<button onclick='addTerminal("HAPPEN"); return false;'><video height='64' width='64' src='mp4s/25536.mp4
+' id='HAPPEN' onclick='addTerminal("HAPPEN"); return false;'></video><a href="https://www.signingsavvy.com/sign/HAPPEN">HAPPEN</a></button>
+<button onclick='addTerminal("BE (SOMEWHERE)"); return false;'><video height='64' width='64' src='' id='BE (SOMEWHERE)' onclick='addTerminal("BE (SOMEWHERE)"); return false;'></video><a href="https://www.signingsavvy.com/sign/BE (SOMEWHERE)">BE (SOMEWHERE)</a></button>
+<button onclick='addTerminal("LIVE"); return false;'><video height='64' width='64' src='mp4s/24811.mp4
+' id='LIVE' onclick='addTerminal("LIVE"); return false;'></video><a href="https://www.signingsavvy.com/sign/LIVE">LIVE</a></button>
+<button onclick='addTerminal("DIE"); return false;'><video height='64' width='64' src='mp4s/26343.mp4
+' id='DIE' onclick='addTerminal("DIE"); return false;'></video><a href="https://www.signingsavvy.com/sign/DIE">DIE</a></button>
+<button onclick='addTerminal("THERE IS"); return false;'><video height='64' width='64' src='' id='THERE IS' onclick='addTerminal("THERE IS"); return false;'></video><a href="https://www.signingsavvy.com/sign/THERE IS">THERE IS</a></button>
+<button onclick='addTerminal("BE"); return false;'><video height='64' width='64' src='mp4s/23129.mp4
+' id='BE' onclick='addTerminal("BE"); return false;'></video><a href="https://www.signingsavvy.com/sign/BE">BE</a></button>
+<button onclick='addTerminal("(IS) MINE"); return false;'><video height='64' width='64' src='' id='(IS) MINE' onclick='addTerminal("(IS) MINE"); return false;'></video><a href="https://www.signingsavvy.com/sign/(IS) MINE">(IS) MINE</a></button>
+<button onclick='addTerminal("MOVE"); return false;'><video height='64' width='64' src='' id='MOVE' onclick='addTerminal("MOVE"); return false;'></video><a href="https://www.signingsavvy.com/sign/MOVE">MOVE</a></button>
+<button onclick='addTerminal("TOUCH"); return false;'><video height='64' width='64' src='mp4s/22598.mp4
+' id='TOUCH' onclick='addTerminal("TOUCH"); return false;'></video><a href="https://www.signingsavvy.com/sign/TOUCH">TOUCH</a></button>
+<button onclick='addTerminal("INSIDE"); return false;'><video height='64' width='64' src='mp4s/6158.mp4
+' id='INSIDE' onclick='addTerminal("INSIDE"); return false;'></video><a href="https://www.signingsavvy.com/sign/INSIDE">INSIDE</a></button>
+<button onclick='addTerminal("PLACE~WHERE~SOMEWHERE"); return false;'><video height='64' width='64' src='' id='PLACE~WHERE~SOMEWHERE' onclick='addTerminal("PLACE~WHERE~SOMEWHERE"); return false;'></video><a href="https://www.signingsavvy.com/sign/PLACE~WHERE~SOMEWHERE">PLACE~WHERE~SOMEWHERE</a></button>
+<button onclick='addTerminal("HERE"); return false;'><video height='64' width='64' src='mp4s/5873.mp4
+' id='HERE' onclick='addTerminal("HERE"); return false;'></video><a href="https://www.signingsavvy.com/sign/HERE">HERE</a></button>
+<button onclick='addTerminal("ABOVE"); return false;'><video height='64' width='64' src='mp4s/24014.mp4
+' id='ABOVE' onclick='addTerminal("ABOVE"); return false;'></video><a href="https://www.signingsavvy.com/sign/ABOVE">ABOVE</a></button>
+<button onclick='addTerminal("BELOW"); return false;'><video height='64' width='64' src='mp4s/27007.mp4
+' id='BELOW' onclick='addTerminal("BELOW"); return false;'></video><a href="https://www.signingsavvy.com/sign/BELOW">BELOW</a></button>
+<button onclick='addTerminal("ON ONE SIDE"); return false;'><video height='64' width='64' src='' id='ON ONE SIDE' onclick='addTerminal("ON ONE SIDE"); return false;'></video><a href="https://www.signingsavvy.com/sign/ON ONE SIDE">ON ONE SIDE</a></button>
+<button onclick='addTerminal("NEAR"); return false;'><video height='64' width='64' src='mp4s/14713.mp4
+' id='NEAR' onclick='addTerminal("NEAR"); return false;'></video><a href="https://www.signingsavvy.com/sign/NEAR">NEAR</a></button>
+<button onclick='addTerminal("FAR"); return false;'><video height='64' width='64' src='mp4s/23561.mp4
+' id='FAR' onclick='addTerminal("FAR"); return false;'></video><a href="https://www.signingsavvy.com/sign/FAR">FAR</a></button>
+<button onclick='addTerminal("THIS"); return false;'><video height='64' width='64' src='' id='THIS' onclick='addTerminal("THIS"); return false;'></video><a href="https://www.signingsavvy.com/sign/THIS">THIS</a></button>
+<button onclick='addTerminal("THE SAME"); return false;'><video height='64' width='64' src='' id='THE SAME' onclick='addTerminal("THE SAME"); return false;'></video><a href="https://www.signingsavvy.com/sign/THE SAME">THE SAME</a></button>
+<button onclick='addTerminal("OTHER~ELSE"); return false;'><video height='64' width='64' src='' id='OTHER~ELSE' onclick='addTerminal("OTHER~ELSE"); return false;'></video><a href="https://www.signingsavvy.com/sign/OTHER~ELSE">OTHER~ELSE</a></button>
+<button onclick='addTerminal("ONE"); return false;'><video height='64' width='64' src='mp4s/26492.mp4
+' id='ONE' onclick='addTerminal("ONE"); return false;'></video><a href="https://www.signingsavvy.com/sign/ONE">ONE</a></button>
+<button onclick='addTerminal("TWO"); return false;'><video height='64' width='64' src='mp4s/26494.mp4
+' id='TWO' onclick='addTerminal("TWO"); return false;'></video><a href="https://www.signingsavvy.com/sign/TWO">TWO</a></button>
+<button onclick='addTerminal("MUCH~MANY"); return false;'><video height='64' width='64' src='' id='MUCH~MANY' onclick='addTerminal("MUCH~MANY"); return false;'></video><a href="https://www.signingsavvy.com/sign/MUCH~MANY">MUCH~MANY</a></button>
+<button onclick='addTerminal("ALL"); return false;'><video height='64' width='64' src='' id='ALL' onclick='addTerminal("ALL"); return false;'></video><a href="https://www.signingsavvy.com/sign/ALL">ALL</a></button>
+<button onclick='addTerminal("SOME"); return false;'><video height='64' width='64' src='mp4s/23931.mp4
+' id='SOME' onclick='addTerminal("SOME"); return false;'></video><a href="https://www.signingsavvy.com/sign/SOME">SOME</a></button>
+<button onclick='addTerminal("LITTLE~FEW"); return false;'><video height='64' width='64' src='' id='LITTLE~FEW' onclick='addTerminal("LITTLE~FEW"); return false;'></video><a href="https://www.signingsavvy.com/sign/LITTLE~FEW">LITTLE~FEW</a></button>
+<button onclick='addTerminal("TIME~WHEN"); return false;'><video height='64' width='64' src='' id='TIME~WHEN' onclick='addTerminal("TIME~WHEN"); return false;'></video><a href="https://www.signingsavvy.com/sign/TIME~WHEN">TIME~WHEN</a></button>
+<button onclick='addTerminal("NOW"); return false;'><video height='64' width='64' src='' id='NOW' onclick='addTerminal("NOW"); return false;'></video><a href="https://www.signingsavvy.com/sign/NOW">NOW</a></button>
+<button onclick='addTerminal("MOMENT"); return false;'><video height='64' width='64' src='mp4s/6539.mp4
+' id='MOMENT' onclick='addTerminal("MOMENT"); return false;'></video><a href="https://www.signingsavvy.com/sign/MOMENT">MOMENT</a></button>
+<button onclick='addTerminal("(FOR) SOME TIME"); return false;'><video height='64' width='64' src='' id='(FOR) SOME TIME' onclick='addTerminal("(FOR) SOME TIME"); return false;'></video><a href="https://www.signingsavvy.com/sign/(FOR) SOME TIME">(FOR) SOME TIME</a></button>
+<button onclick='addTerminal("A LONG TIME"); return false;'><video height='64' width='64' src='' id='A LONG TIME' onclick='addTerminal("A LONG TIME"); return false;'></video><a href="https://www.signingsavvy.com/sign/A LONG TIME">A LONG TIME</a></button>
+<button onclick='addTerminal("A SHORT TIME"); return false;'><video height='64' width='64' src='' id='A SHORT TIME' onclick='addTerminal("A SHORT TIME"); return false;'></video><a href="https://www.signingsavvy.com/sign/A SHORT TIME">A SHORT TIME</a></button>
+<button onclick='addTerminal("BEFORE"); return false;'><video height='64' width='64' src='' id='BEFORE' onclick='addTerminal("BEFORE"); return false;'></video><a href="https://www.signingsavvy.com/sign/BEFORE">BEFORE</a></button>
+<button onclick='addTerminal("AFTER"); return false;'><video height='64' width='64' src='mp4s/9722.mp4
+' id='AFTER' onclick='addTerminal("AFTER"); return false;'></video><a href="https://www.signingsavvy.com/sign/AFTER">AFTER</a></button>
 </div>
 </body>
 </html>

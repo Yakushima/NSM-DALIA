@@ -1,5 +1,6 @@
 NOT~DON’T
-not good, not bad
+not good
+not bad
 not like this
 I don’t know
 someone can’t do this
@@ -13,19 +14,17 @@ it can be like this: …
 
 BECAUSE
 because of this
-it happened because this someone
- did something before
+it happened because this someone did something before
 … not because of anything else
 
 IF
-if it happens like this for some time,
- ...,
+if it happens like this for some time, ...,
 if you do this, ...
-if someone does something like this,
- ...
+if someone does something like this, ...
 
 MAYBE
-maybe it is like this, maybe it is not like this
+maybe it is like this
+maybe it is not like this
 maybe someone else can do it
 
 LIKE~AS~WAY
@@ -34,29 +33,38 @@ someone thinks like this: “- -”
 someone like me
 this someone does it like this
 it happens as this someone wants
-… do/say it in this way, not in another
-way
+… do/say it in this way, not in another way
 
 VERY
-very big, very small, very good, very
-bad, very far, very near, a very
-short time, a very long time
+very big
+very small
+very good
+very bad
+very far
+very near
+a very short time
+a very long time
 I want it very much (=very)
-very very big, very very good, very
-very far, etc.
+very very big
+very very good
+very very far
+etc.
 
 MORE~ANYMORE
-someone wants more, someone does more
-someone wants to know/say/think
- more about it
-one more, two more, many more,
- not more
+someone wants more
+someone does more
+someone wants to know/say/think more about it
+one more
+two more
+many more
+not more
 not living anymore
 not like this anymore
 
 I~ME
 I want to do/know/say something
-I want this, I don’t want this
+I want this
+I don’t want this
 I don’t know
 something bad can happen to me
 someone like me
@@ -67,59 +75,68 @@ something bad can happen to you
 you are someone like me
 
 SOMEONE
-this someone, the same someone,
- someone else, this other someone
+this someone
+the same someone
+someone else
+this other someone
 someone does/says something
 
-SOMETHING
-~THING
-this something~thing, the same
-something~thing, something else~another something
-something big, something small
+SOMETHING~THING
+this something~thing
+the same something~thing
+something else~another something
+something big
+something small
 something of one kind
 
 BODY
-someone’s body, people’s bodies
+someone’s body
+people’s bodies
 part of someone’s body
-a body of one kind, bodies of two
- kinds
-something bad happens inside
- someone’s body
+a body of one kind
+bodies of two kinds
+something bad happens inside someone’s body
 someone feels something in the body
 
 PEOPLE
-these people, many people, some
- people, few people
+these people
+many people
+some people
+few people
 many people think like this: … people can say ...
 people of one kind
 
 KIND
-this kind, the same kind, another
- kind, this other kind
+this kind
+the same kind
+another kind
+this other kind
 something/someone of one kind
 people of one/two/many kinds
 
 PART
 part of someone’s body
-this part, the same part, another part,
- this other part
+this part
+the same part
+another part
+this other part
 this something has two/many parts
 
 WORDS
-many words, other words, one word
+many words
+other words
+one word
 words of one kind
-say something with (not with) words,
- say something in other words
+say something with (not with) words
+say something in other words
 say these words
 these words say something
 
 WANT
 I want this
 someone wants something
-someone wants to do/know/say
- something
-someone wants someone else to do/
- know/say something
+someone wants to do/know/say something
+someone wants someone else to do/know/say something
 someone wants something to happen
 I want it very much
 
@@ -127,25 +144,19 @@ DON’T WANT
 I don’t want this
 someone doesn’t want this
 someone doesn’t want to do something
-someone doesn’t want something
- to happen
+someone doesn’t want something to happen
 
 FEEL
 someone feels something (good/bad)
-someone feels something (good/bad)
- in part of the body
-someone feels something good/bad
- towards someone else/ something
+someone feels something (good/bad) in part of the body
+someone feels something good/bad towards someone else/ something
 
 DO
-someone does something (to someone
- else)
+someone does something (to someone else)
 someone does something with
 something else/part of the body
-someone does something with
- someone else
-someone does something good (for
- someone else)/bad (to someone else)
+someone does something with someone else
+someone does something good (for someone else)/bad (to someone else)
 someone else)/bad (to someone else)
 
 SAY
@@ -175,14 +186,11 @@ someone/people can/can’t see this something
 
 HEAR
 someone hears something
-people can feel something bad when
- they hear this word
+people can feel something bad when they hear this word
 
 THINK
-someone thinks about someone else/
- something
-someone thinks something good/bad
- about someone else/something
+someone thinks about someone else/something
+someone thinks something good/bad about someone else/something
 someone thinks like this: “- -”
 many people think like this: “- -”
 
@@ -197,7 +205,8 @@ a big place
 very big
 
 BAD
-something bad, someone bad
+something bad
+someone bad
 something bad
 something bad happens
 do something bad (to someone)
@@ -206,7 +215,8 @@ this is bad
 it is bad if ...
 
 GOOD
-something good, someone good
+something good
+someone good
 something good
 something good happens
 do something good (for someone)
@@ -222,10 +232,8 @@ HAPPEN
 something happens
 something happens to someone
 something happens to something
-something happens somewhere (in a
- place)
-something happens inside
-someone/something
+something happens somewhere (in a place)
+something happens inside someone/something
 
 BE (SOMEWHERE)
 someone is somewhere (in a place)
@@ -256,35 +264,31 @@ I know who this someone is
 
 (IS) MINE
 this thing (knife, shirt, etc.) is mine
-[this thing is someone else’s =
-someone else can say about this
-thing: “it is mine”]
+[this thing is someone else’s = someone else can say about this thing: “it is mine”]
 
 MOVE
 someone moves (in this place)
 something moves in this place
-parts of this someone’s body move
- as this someone wants
+parts of this someone’s body move as this someone wants
 
 TOUCH
-something touches something else
- (somewhere)
-something touches part of someone’s
- body
-someone/people can/can’t touch this
- something
+something touches something else (somewhere)
+something touches part of someone’s body
+someone/people can/can’t touch this something
 
 INSIDE
 inside this something
 inside this someone
 inside part of this someone’s body
 
-PLACE~WHERE~
-SOMEWHERE
-(in) this place, (in) the same place,
-somewhere else, (in) this other
+PLACE~WHERE~SOMEWHERE
+(in) this place
+(in) the same place
+somewhere else
+(in) this other
 place
-in some places, in many places
+in some places
+in many places
 in the place where …
 
 HERE
@@ -300,9 +304,11 @@ below this place
 far below this place
 
 ON ONE SIDE
-on this side, on the same side,
-on one side, on two sides,
- on all sides
+on this side
+on the same side
+on one side
+on two sides
+on all sides
 
 NEAR
 near this place
@@ -312,65 +318,97 @@ FAR
 far from this place
 
 THIS
-this someone (something), these
- people, this kind, this part
-at this time, in this place
+this someone (something)
+these people
+this kind
+this part
+at this time
+in this place
 because of this
 it is like this: …
 
 THE SAME
-the same someone, the same thing,
-the same part, the same kind
-at the same time, in the same place
-someone says/does/thinks/knows/
- wants/feels the same
+the same someone
+the same thing
+the same part
+the same kind
+at the same time
+in the same place
+someone says/does/thinks/knows/wants/feels the same
 
 OTHER~ELSE
-someone else, something else, at
- another time, somewhere else
-other parts, other kinds
-this other part, this other kind, this
- other someone, this other thing
+someone else
+something else
+at another time
+somewhere else
+other parts
+other kinds
+this other part
+this other kind
+this other someone
+this other thing
 
 ONE
-one someone, one thing, one part,
- one kind
-in one place, at one time
+one someone
+one thing
+one part
+one kind
+in one place
+at one time
 one of these things/people
 something of one kind
 one more thing
 
 TWO
-two things, two parts, two kinds
+two things
+two parts
+two kinds
 two of these things/people
 two more things
 
 MUCH~MANY
-many people, many things, many
- parts, many kinds
-at many times, in many places
+many people
+many things
+many parts
+many kinds
+at many times
+in many places
 much of this something (e.g. water)
-much more, many more
+much more
+many more
 
 ALL
-all people, all things, all parts, all kinds
-at all times, in all places
+all people
+all things
+all parts
+all kinds
+at all times
+in all places
 all of this something (e.g. water)
 
 SOME
-some people, some things, some parts, some kinds
-at some times, in some places
+some people
+some things
+some parts
+some kinds
+at some times
+in some places
 some of these things/people
 some of this something (e.g. water)
 
 LITTLE~FEW
-few people, few things a little of this something (e.g. water)
-very little, very few
+few people
+few things a little of this something (e.g. water)
+very little
+very few
 
 TIME~WHEN
- (at) this time, (at) the same time, at
-another time, at this other time, at
-some times, at many times
+(at) this time
+(at) the same time
+at another time
+at this other time
+at some times
+at many times
 at the time when …
 
 NOW
@@ -379,32 +417,37 @@ when I say this now, ...
 
 MOMENT
 it happens in one moment
-a moment before, a moment after
+a moment before
+a moment after
 at this moment
 
 (FOR) SOME TIME
-some time before, some time after
+some time before
+some time after
 it happens like this for some time
 someone does this for some time
-[during this time = at this time, for
- some time]
+[during this time = at this time, for some time]
 
 A LONG TIME
-a long time before, a long time after
+a long time before
+a long time after
 a very long time
-for a long time [= for some time, a
-long time]
+for a long time [= for some time, a long time]
 
 A SHORT TIME
-a short time before, a short time after
+a short time before
+a short time after
 a very short time
-for a short time [= for some time, a
- short time]
+for a short time [= for some time, a short time]
 
 BEFORE
-before this, some time before, a short
-time before, a long time before
+before this
+some time before
+a short time before
+a long time before
 
 AFTER
-after this, some time after, a short
-time a
+after this
+some time after
+a short time after
+a long time after

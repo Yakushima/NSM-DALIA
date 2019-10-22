@@ -13,12 +13,24 @@ while (<STDIN>) {
 	}
 
 	push (@titles, $title);
-	$primes{$title} = '"'.join('", "', @sentences).'"';
+	@$primes{$title} = @sentences;
 }
 
 foreach (@titles) {
-	if (! -e "webpages/".$_) {
-		print ("wget64  --output-document=\"webpages/".$_."\" \"https://www.signingsavvy.com/sign/".$_."\"\n");
+	$title = $_;
+	if (! -e "webpages/".$title) {
+		print ("wget64  --output-document=\"webpages/".$title."\" \"https://www.signingsavvy.com/sign/".$title."\"\n");
 	}
-	print ("perl pdeaf.pl '".$_."'\n");
+	print ("perl pdeaf.pl '".$title."'\n");
+
+
+	@sentences = @$primes{$title};
+	foreach (@sentences) {
+		$sentence = $_;
+		$sentence =~ s/\//;/g;
+		if (! -e "frames/$sentence") {
+			print ("wget64  --output-document=\"frames/".$sentence."\" \"https://www.signingsavvy.com/sign/".$sentence."\"\n");
+		}
+		print ("perl pdeaf.pl '".$sentence."'\n");
+	}
 }
