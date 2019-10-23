@@ -12,7 +12,8 @@ while (<STDIN>) {
 	$r =~ s/^ *//;
 	if ($r) {
 		@sentences = split(',', $r);
-		@terminals = ($r =~ m/([\w|']+)/g);
+		# @terminals = ($r =~ m/([\w|']+)/g);
+		@terminals = ($r =~ m/(\S+)/g);
 		push (@allterminals, @terminals);
 	}
 	if ($title) {
