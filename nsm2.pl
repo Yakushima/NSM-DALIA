@@ -71,6 +71,7 @@ print ("	oldprime = newprime;\n");
 print ("	sentences.appendChild(div);\n");
 print ("}\n");
 print ("</script>\n");
+print ("<script src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>\n");
 print ("<h1>Semantic Primes (click to add, edit sentence examples of this prime)</h1>\n");
 print ("<div>\n");
 open (VIDEOS, "<videos.txt");

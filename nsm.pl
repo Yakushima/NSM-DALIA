@@ -26,6 +26,7 @@ print ("	<head>\n");
 print ("		<title>American Sign Language Natural Semantic Metalanguage</title>\n");
 print ("	</head>\n");
 print ("<body>\n");
+print ("<script src='https://code.jquery.com/jquery-3.4.1.min.js' integrity='sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=' crossorigin='anonymous'></script>\n");
 print ("<script>\n");
 print ("var oldprime = null;\n");
 print ("function addTerminal(terminal) {\n");
