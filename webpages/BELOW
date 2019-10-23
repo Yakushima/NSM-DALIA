@@ -66,8 +66,24 @@
 							</div><!--End service-->	
 							
 							<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
-						
-						
+						<div class="service">
+								<i class="fa fa-info-circle service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Sign Description</h5>
+								  <p><em>Available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></em></p>
+								</div><!--End desc-->
+							</div><!--End service-->
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
+						<div class="service">
+									<i class="icon icon-eyeglasses service-icon"></i>
+									<div class="desc">
+									  <h5 class="text-transform-uppercase">Memory Aid</h5>
+									  <p><em>Available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></em></p>
+									</div><!--End desc-->
+								</div><!--End service-->
+
+								<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
 						<div class="service">
 									<i class="fa fa-tags service-icon"></i>
 									<div class="desc">

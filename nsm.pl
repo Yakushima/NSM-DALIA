@@ -32,12 +32,12 @@ print ("	sentence.appendChild(space);\n");
 print ("}\n");
 print ("function editSentences(newprime) {\n");
 print ("	var newSentence = document.getElementById('newSentence');\n");
-print ("	if (newSentence !== null && oldprime !== null) {\n");
+print ("	if (newSentence !== null && newSentence.childNodes !== null && newSentence.childNodes.length > 0 && oldprime !== null) {\n");
 print ("		var title = document.getElementById(oldprime);\n");
 print ("		var click = title.getAttribute('onclick');\n");
-print ("		title.setAttribute('onclick', click.substring(0, click.length-2)+', \"'+newSentence.innerHTML+'\");');\n");
+			# save the sentence in the onclick event
+print ("		title.setAttribute('onclick', click.substring(0, click.length-16)+', \"'+newSentence.innerHTML+'\"); return false;');\n");
 print ("	}\n");
-print ("	oldprime = newprime;\n");
 print ("	var sentences = document.getElementById('sentences');\n");
 print ("	while (sentences.firstChild) {\n");
 print ("		sentences.removeChild(sentences.firstChild);\n");
@@ -59,15 +59,21 @@ print ("	sentence.setAttribute('id', 'newSentence');\n");
 print ("	div.appendChild(sentence);\n");
 print ("	var nbr = document.createElement('br');\n");
 print ("	div.appendChild(nbr);\n");
+print ("	oldprime = newprime;\n");
 print ("	sentences.appendChild(div);\n");
 print ("}\n");
 print ("</script>\n");
 print ("<h1>Semantic Primes (click to add, edit sentence examples of this prime)</h1>\n");
 print ("<div>\n");
-foreach (@titles) {
-	$video = `grep -w "$_" videos.txt`;
-	$video =~ s/.*\/(.*)/mp4s\/$1/;
-	print ("<button><video height='64' width='64' src='$video' id='".$_."' onclick='editSentences(\"".$_."\", ".$primes{$_}.");'></video><a href=\"https://www.signingsavvy.com/sign/".$_."\">".$_."</a></button>\n");
+open (VIDEOS, "<videos.txt");
+@videos = <VIDEOS>;
+close (VIDEOS);
+foreach (sort(@titles)) {
+	$video = $_;
+	@video = grep /\b$video\b/, @videos;
+	$video = @video[0];
+	$video =~ s/.*\/(.*)"\n/mp4s\/$1/;
+	print ("<button onclick='editSentences(\"".$_."\", ".$primes{$_}."); return false;' id='".$_."'><video height='64' width='64' src='$video' ></video><a href=\"https://www.signingsavvy.com/sign/".$_."\">".$_."</a></button>\n");
 }
 print ("</div>\n");
 
@@ -80,10 +86,12 @@ print "\n";
 
 print ("<h1>Syntactic Frame Elements (click to add to current sentence)</h1>\n");
 print ("<div>\n");
-foreach (@titles) {
-	$video = `grep -w "$_" videos.txt`;
-	$video =~ s/.*\/(.*)/mp4s\/$1/;
-	print ("<button onclick='addTerminal(\"".$_."\"); return false;'><video height='64' width='64' src='$video' id='".$_."' onclick='addTerminal(\"".$_."\"); return false;'></video><a href=\"https://www.signingsavvy.com/sign/".$_."\">".$_."</a></button>\n");
+foreach (sort(@titles)) {
+	$video = $_;
+	@video = grep /\b$video\b/, @videos;
+	$video = @video[0];
+	$video =~ s/.*\/(.*)"\n/mp4s\/$1/;
+	print ("<button onclick='addTerminal(\"".$_."\"); return false;'><video height='64' width='64' src='$video'></video><a href=\"https://www.signingsavvy.com/sign/".$_."\">".$_."</a></button>\n");
 }
 print ("</div>\n");
 print ("</body>\n");

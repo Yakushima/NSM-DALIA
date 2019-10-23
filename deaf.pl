@@ -1,5 +1,26 @@
 %primes = {};
 @titles = ();
+@videos = ();
+
+sub pdeaf {
+	open(FILE, "<".@_[0]);
+	@pvideos = ();
+	while (<FILE>) {
+		my @matches = ($_ =~ m/[^"]*\.mp4/g);
+		$files = join(",", @matches);
+		$outputfiles = $files;
+		$outputfiles =~ s/.*\/(.*)/mp4s\/$1/;
+		if (! -e $outputfiles && $outputfiles) {
+			print ("wget64 --output-document='$outputfiles' 'https://www.signingsavvy.com/$files'\n");
+		}
+		if ($files) {
+			push(@pvideos,  '"'.@_[0].'":"'.$files.'"');
+		}
+	}
+	close(FILE);
+	return @pvideos;
+}
+
 while (<STDIN>) {
 	chomp;
 	$title = $_;
@@ -18,10 +39,10 @@ while (<STDIN>) {
 
 foreach (@titles) {
 	$title = $_;
-	if (! -e "webpages/".$title) {
-		print ("wget64  --output-document=\"webpages/".$title."\" \"https://www.signingsavvy.com/sign/".$title."\"\n");
+	if (! -e "primes/".$title) {
+		print ("wget64  --output-document=\"primes/".$title."\" \"https://www.signingsavvy.com/sign/".$title."\"\n");
 	}
-	print ("perl pdeaf.pl '".$title."'\n");
+	push (@videos,  &pdeaf("primes/$title"));
 
 
 	@sentences = @$primes{$title};
@@ -31,6 +52,11 @@ foreach (@titles) {
 		if (! -e "frames/$sentence") {
 			print ("wget64  --output-document=\"frames/".$sentence."\" \"https://www.signingsavvy.com/sign/".$sentence."\"\n");
 		}
-		print ("perl pdeaf.pl '".$sentence."'\n");
+		push (@videos, &pdeaf("frames/$sentence"));
 	}
 }
+# create unique videos
+my @videos = do { my %seen; grep { !$seen{$_}++ } @videos };
+open (VIDEOS, ">videos.txt");
+print VIDEOS join("\n", @videos)."\n";
+close(VIDEOS);
