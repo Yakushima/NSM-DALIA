@@ -1,0 +1,178 @@
+
+<!DOCTYPE html><!--[if IE 8]> <html lang="en" class="ie8"> <![endif]--><!--[if IE 9]> <html lang="en" class="ie9"> <![endif]--><!--[if !IE]><!--> <html lang="en"> <!--<![endif]--><head>	<base href="https://www.signingsavvy.com/" />	<title>Sign for TRUE</title>	<!-- Meta -->	<meta charset="utf-8">	<meta property="description" content="Sign language video of the sign TRUE" /><meta property="og:description" content="Sign language video of the sign TRUE" />	<meta name="author" content="Signing Savvy, LLC">	<meta name="copyright" content="Signing Savvy, LLC" />	<meta name="keywords" content="sign language, dictionary, american sign language, ASL, baby signs, signing, hearing impaired, deaf, disabilities" />	<meta property="og:site_name" content="Signing Savvy" />	<meta property="og:title" content="Sign for TRUE" />	<meta property="og:locale" content="en_US" />	<meta property="og:type" content="website" />	<meta property="og:image" content="https://www.signingsavvy.com/images/signingsavvy-logo.gif"/>		<meta property="fb:app_id" content="153421804744116" />	<meta property="fb:admins" content="508064998" />	<!-- Favicon -->	<link rel="icon" href="favicon.ico">	<link rel="apple-touch-icon" href="images/app-icon.png"/>	<!-- CSS Global Compulsory -->	<link rel="stylesheet" href="assets/css/style.css" as="style">	<!-- CSS Implementing Plugins -->	<link rel="stylesheet" href="assets/plugins/animate.css" as="style">	<link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css" as="style">	<link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css" as="style">	<!-- CSS Customization -->    <link rel="stylesheet" type="text/css" href="skin2.css" as="style" />		<!-- Web Fonts -->	<link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" >	<!-- CSS Global Compulsory -->    <link rel="stylesheet" type="text/css" href="magnific-popup/magnific-popup.css">     <link rel="stylesheet" type="text/css" href="js/cupertino/jquery-ui.min.css" >    <link rel='stylesheet' type="text/css" href='js/fullcalendar/fullcalendar.css' />       <link rel="stylesheet" href="node_modules/video.js/dist/video-js.css">    <link rel="stylesheet" href="node_modules/videojs-contrib-ads/dist/videojs.ads.css">    <link rel="stylesheet" href="node_modules/videojs-ima/src/videojs.ima.css">	 <!-- JS Global Compulsory -->	<script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>	<script type="text/javascript" src="assets/plugins/jquery/jquery-migrate.min.js"></script>	<!-- JS Customization -->	<script type="text/javascript" src="assets/js/custom.js"></script>	<script type="text/javascript" src="js/jquery-ui.min.js"></script>    <script type="text/javascript" src="js/jquery.form.js"></script>   	<script type="text/javascript" src="js/moment.min.js"></script>        <script type="text/javascript" src="js/jquery-cookie/jquery.cookie.js"></script>    <script type="text/javascript" src='js/jstz.min.js'></script>    <script type="text/javascript" src="magnific-popup/jquery.magnific-popup.min.js"></script>       <script type="text/javascript" src="ckeditor/ckeditor.js"></script>    <script type="text/javascript" src="flash_detect_min.js"></script>    <script type="text/javascript" src='js/fullcalendar/fullcalendar.js'></script>    <script type="text/javascript" src="node_modules/video.js/dist/video.js"></script>        <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>    <script type="text/javascript" src="node_modules/videojs-contrib-ads/dist/videojs.ads.js"></script>    <script type="text/javascript" src="node_modules/videojs-ima/src/videojs.ima.js"></script>        <script type="text/javascript" src="js/setupPlayer2.js"></script>    <script type="text/javascript" src="js/tabs.js"></script>		<script type="text/javascript">		$(document).ready(function() {			animatedNumber();			setInterval(function() {				animatedNumber()			},20000);		});		function animatedNumber() {			$('.count').each(function () {		    $(this).prop('Counter',0).animate({		        Counter: $(this).text().replace(/\,/g,'')		    }, {		        duration: 5000,		        easing: 'swing',		        step: function (now) {		            $(this).text(Math.ceil(now).toLocaleString());		        }		    	});			});		}		function populateSearch(str) {			document.getElementById("searchField").value = str;			document.getElementById("searchField").focus();			document.getElementById("searchField").select();		}	 </script>    	<script type="text/javascript">	$(document).ready(function() {		$("body").on("click",".memberOnly",function(e) {		  e.preventDefault();		  var reloadDialog = $("<div>").dialog({				modal: true,				open: function () {					//nothing				},				close: function(event, ui) {						$(this).remove();					},				title: "Member Feature",				buttons: [				{				  text: "Learn More",				  click: function() {					$( this ).dialog( "close" );					window.location = "member";				  }				},				{				  text: "Close",				  click: function() {					$( this ).dialog( "close" );				  }				}			  ]			});			reloadDialog.html("Viewing this content is a member only feature!");		});  });    </script>  	    </head>    	
+    <body id="page_signs" class="bg">
+        <div id="frame">
+            
+            	<!--START Google Analytics Tracking ga.js Code-->	<script type="text/javascript">		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');	  ga('create', 'UA-6883744-1', 'auto');	  ga('send', 'pageview');	</script>		<!-- Header, Navigation -->	<div id="header">		<div id="header_inner">			<a href="https://www.signingsavvy.com/"><h1 id="header_logo" class="hide">Signing Savvy, Your Sign Language Resource</h1></a>										<div id="header_login">					<form id="sitelogin" name="login" method="post" action="https://www.signingsavvy.com/sign/TRUE" autocomplete="on" >					<table>						<tr><td>					<div class="header_tb_wrapper">						<input type="text" placeholder="Email (username)" tabindex="2" maxlength="50" name="username" id="realuser" class="real" autocorrect="off" autocapitalize="off" autocomplete="off">					</div><!-- END header_tb_wrapper --> 				</td><td>					<div class="header_tb_wrapper">						<input type="password" tabindex="3" maxlength="24" name="password" placeholder="Password" autocorrect="off" autocapitalize="off" autocomplete="off" id="realpass" class="real">					</div><!-- END header_tb_wrapper --> 				</td><td>					<input type="hidden" name="login" value="1" />					<input type="checkbox" name="remember" value="1" title="Remember me on this computer." checked />				</td><td>					<input type="submit" value="" />				</td></tr>				<tr><td>					<a href="https://www.signingsavvy.com/member">New User?</a>					</td><td>						<a href="https://www.signingsavvy.com/resetpassword">forgot password?</a>					</td><td>					</td><td>						<a href="https://www.signingsavvy.com/member"><img src="https://www.signingsavvy.com/images/button_membership_green.png" alt="Membership" /></a>					</td></tr>				</table>									</div><!-- END header_login --> 										<!-- MAIN NAVIGATION TABS --> 			<ul id="header_nav">				<li><a href="https://www.signingsavvy.com/search" class="hide" id="signs">Signs</a></li>				<li><a href="https://www.signingsavvy.com/fingerspelling" class="hide" id="fingerspelling">Fingerspelling</a></li>				<li><a href="https://www.signingsavvy.com/numbers" class="hide" id="numbers">Numbers</a></li>				<li><a href="https://www.signingsavvy.com/sentences" class="hide" id="sentences">Sentences</a></li>				<li><a href="https://www.signingsavvy.com/wordlists" class="hide" id="wlists">Lists</a></li>				<li><a href="https://www.signingsavvy.com/learning" class="hide" id="learning">Learning</a></li>				<li><a href="https://www.signingsavvy.com/asloneonone" class="hide" id="tutoring">Tutoring</a></li>				<li><a href="https://www.signingsavvy.com/" class="hide" id="blog">Blog</a></li>			</ul>		</div><!-- END header_inner --> 	</div><!-- END header --> 		<!-- Search -->	<div id="search">		<div id="search_inner">			<div id="search_content">				<div id="search_left">					<form name="searchsigns" method="post" action="search">					<div id="search_left_top">						<h2>Search Sign Language Dictionary</h2>						<div class="search_tb_wrapper">							<input type="text" name="search" id="searchField" tabindex="1" placeholder="type a word or phrase" value="TRUE" onClick="this.focus();this.select();" accesskey="s" autofocus />						</div><!-- END search_tb_wrapper --> 						<input name="find" type="hidden" value="1" />						<input type="submit" value="" onClick="if (searchsigns.search.value=='type a word or phrase') {return false;}" />					</div><!-- END search_left_top --> 					</form>					<div id="search_left_bottom">						<!--Enter a word or phrase above and then click "Find Signs" to see how it is signed.-->					</div><!-- END search_left_bottom --> 				</div><!-- END search_left --> 				<div id="search_right">					<div id="search_right_top">						<h2>Browse Signs by...</h2>						<ul>							<li><a href="https://www.signingsavvy.com/search">Browse by Letter</a></li>							<li><a href="https://www.signingsavvy.com/fingerspelling">Fingerspelling</a></li>							<li><a href="https://www.signingsavvy.com/numbers">Numbers</a></li>							<li><a href="https://www.signingsavvy.com/wordlist/colors">Colors</a></li>						</ul>						<ul>							<li><a href="https://www.signingsavvy.com/wordlist/family">Family</a></li>							<li><a href="https://www.signingsavvy.com/wordlist/animals">Animals</a></li>							<li><a href="https://www.signingsavvy.com/wordlist/holidays">Holidays</a></li>							<li><a href="https://www.signingsavvy.com/wordlist/babysigns">Baby Signs</a></li>												</ul>						<div class="clear"></div>					</div><!-- END search_right_top --> 					<div id="search_right_bottom">						<!-- MAIN NAVIGATION TABS --> 						<ul id="list_nav">							<li ><a href="https://www.signingsavvy.com/wordlist/savvy" class="hide" id="list-savvy">Signs</a></li>							<li ><a href="https://www.signingsavvy.com/wordlist/my" class="hide" id="list-my">Fingerspelling</a></li>							<li ><a href="https://www.signingsavvy.com/wordlist/shared" class="hide" id="list-shared">Numbers</a></li>						</ul>						<!--<a href="wordlist/shared"><img src="images/shared_btn.png" alt="Shared Lists" /></a>						<a href="wordlist/my"><img src="images/my_btn.png" alt="My Lists" /></a>						<a href="member"><img src="images/membership_btn.png" alt="Membership" /></a>-->					</div><!-- END search_right_bottom --> 				</div><!-- END search_right --> 				<div class="clear"></div>			</div><!-- END search_content --> 		</div><!-- END search_inner --> 	</div><!-- END search --> 		<script type="text/javascript">	  	document.getElementById("searchField").focus();		document.getElementById("searchField").select();	</script>		            
+            <!-- Main, Index -->
+            <div id="main" class="index">
+            
+                <!-- Main, Index -->
+            <div id="main" class="sub">
+                <div id="main_content">
+                    <div id="main_content_inner">
+                        <div id="main_content_left">
+                            <div class="content_module">
+									<div class="sign_module">
+		<div class="signing_header">
+
+			<h2>TRUE</h2>
+			<ul>
+			<li><a class="current" href="#">ASL<br>1</a></li><li><a href="sign/TRUE/449/2" title="Show variation 2 of sign">ASL<br>2</a></li><li><a href="sign/TRUE/449/3" title="Show variation 3 of sign">finger<br>spell</a></li>			</ul>
+			
+		</div> <!-- END signing_header -->
+	
+	<div class="signing_body">
+		<div class="videocontent"><link rel="preload" as="video" href="media/mp4-ld/24/24977.mp4"><video id="video-1" playsinline class="video-js vjs-default-skin vjs-16-9 vjs-static-controls vjs-big-play-centered" width="640px" height="360px" data-setup='{ "controls":true, "autoplay":false, "preload":"auto", "playbackRates": [0.25, 0.5, 0.75, 1.0, 1.5, 2] }'>
+	  <source src="media/mp4-ld/24/24977.mp4" type="video/mp4" />
+	  <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+	  </video><div class="signing_caption"><h3 id="video-1-captions"></h3></div> <!-- END signing_caption --></div> <!-- END videocontent --><script>
+	      var videoId = "video-1"
+		  var videoList=new Array("media/mp4-ld/24/24977.mp4");
+	   	  var englishCaptionList=new Array("TRUE");
+
+		  setupPlayer(videoId,videoList,englishCaptionList,1,1,1,false,1,1);
+	  </script>			
+		</div> <!-- END signing_body -->
+
+					
+			<!-- Tab v1 -->
+			<div class="signing_details tab-v1" id="sign-tabs">
+				<ul class="nav nav-tabs">
+
+					<li class="active"><a onclick="openTab(event,'tab-details')" data-toggle="tab">Details</a></li>
+
+					<li><a onclick="openTab(event,'tab-options')" data-toggle="tab">Options</a></li><li><a onclick="openTab(event,'tab-comments')" data-toggle="tab">Comments <span id="comment-count"></span></a></li><iframe align="right" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.signingsavvy.com%2Fsign%2FTRUE%2F449%2F1&layout=button_count&show_faces=false&width=100&action=like&font=verdana&colorscheme=light" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:20px" allowTransparency="true"></iframe>				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane fade in active" id="tab-details">
+						
+					<div class="service">
+							<i class="fa fa-pencil service-icon"></i>
+								<div class="desc">
+								  <h5><span class="text-transform-uppercase">What is being signed</span> (English Meaning)</h5><p>TRUE</p></div><!--End desc-->
+							</div><!--End service-->
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
+						<div class="service">
+								<i class="fa fa-hand-paper-o service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Sign Type</h5>
+								  <p><em>Available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></em></p>
+								</div><!--End desc-->
+							</div><!--End service-->	
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
+						<div class="service">
+								<i class="fa fa-info-circle service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Sign Description</h5>
+								  <p><em>Available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></em></p>
+								</div><!--End desc-->
+							</div><!--End service-->
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
+						<div class="service">
+									<i class="icon icon-eyeglasses service-icon"></i>
+									<div class="desc">
+									  <h5 class="text-transform-uppercase">Memory Aid</h5>
+									  <p><em>Available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></em></p>
+									</div><!--End desc-->
+								</div><!--End service-->
+
+								<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
+						<div class="service">
+									<i class="fa fa-tags service-icon"></i>
+									<div class="desc">
+									  <h5><span class="text-transform-uppercase">This Sign is Used to Say</span> (Sign Synonyms)</h5>
+									  <ul class="list tags-v2 margin-bottom-10"><li><a class="desc-notactive" href="sign/ACTUAL/2918/1" title="Show variation 1 of sign">ACTUAL</a></li><li><a class="desc-notactive" href="sign/ACTUALLY/2919/1" title="Show variation 1 of sign">ACTUALLY</a></li><li><a class="desc-notactive" href="sign/AUTHENTIC/5513/1" title="Show variation 1 of sign">AUTHENTIC</a></li><li><a class="desc-notactive" href="sign/CERTAIN/3107/1" title="Show variation 1 of sign">CERTAIN</a></li><li><a class="desc-notactive" href="sign/CERTAINLY/3108/1" title="Show variation 1 of sign">CERTAINLY</a></li><li><a class="desc-notactive" href="sign/DEFINITELY/8699/1" title="Show variation 1 of sign">DEFINITELY <em>(as in "for sure")</em></a></li><li><a class="desc-notactive" href="sign/FOR SURE/8698/1" title="Show variation 1 of sign">FOR SURE</a></li><li><a class="desc-notactive" href="sign/GENUINE/5514/1" title="Show variation 1 of sign">GENUINE</a></li><li><a class="desc-notactive" href="sign/INDEED/6534/1" title="Show variation 1 of sign">INDEED</a></li><li><a class="desc-notactive" href="sign/OF COURSE/298/2" title="Show variation 2 of sign">OF COURSE</a></li><li><a class="desc-notactive" href="sign/REAL/4282/1" title="Show variation 1 of sign">REAL</a></li><li><a class="desc-notactive" href="sign/REALLY/4285/1" title="Show variation 1 of sign">REALLY</a></li><li><a class="desc-notactive" href="sign/SINCERE/5515/1" title="Show variation 1 of sign">SINCERE</a></li><li><a class="desc-notactive" href="sign/SURE/4655/1" title="Show variation 1 of sign">SURE</a></li><li><a class="desc-notactive" href="sign/SURELY/4656/1" title="Show variation 1 of sign">SURELY</a></li><li><span class="desc-active current"> TRUE <i class="fa fa-eye"></i></span></li><li><a class="desc-notactive" href="sign/TRULY/4789/1" title="Show variation 1 of sign">TRULY</a></li><li><a class="desc-notactive" href="sign/TRUTH/5516/1" title="Show variation 1 of sign">TRUTH</a></li><li><a class="desc-notactive" href="sign/VALID/5517/1" title="Show variation 1 of sign">VALID</a></li><li><a class="desc-notactive" href="sign/VERILY/6533/1" title="Show variation 1 of sign">VERILY <em>(as in "certainly or truly ")</em></a></li><li><a class="desc-notactive" href="sign/VERY/4830/1" title="Show variation 1 of sign">VERY <em>(as in "really")</em></a></li><li><a class="desc-notactive" href="sign/VIRTUAL/4837/1" title="Show variation 1 of sign">VIRTUAL <em>(as in "nearly ")</em></a></li></ul><!-- End Tags v2 -->
+									  </div><!--End desc-->
+									</div><!--End service-->
+
+									<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
+						<div class="service">
+								<i class="fa fa-film service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Example Sentence</h5>
+								  <p><em>Available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></em></p>
+								</div><!--End desc-->
+							</div><!--End service-->
+
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
+						
+						<div class="service">
+									<i class="fa fa-cubes service-icon"></i>
+									<div class="desc">
+									  <h5 class="text-transform-uppercase">Sign Variations for this Word</h5>
+										
+									<ul class="list tags-v2 margin-bottom-10"><li><span class="desc-active current">Variation 1 - ASL <i class="fa fa-eye"></i></span></li><li><a class="desc-notactive" href="sign/TRUE/449/2" title="Show variation 2 of sign">Variation 2 - ASL</a></li><li><a class="desc-notactive" href="sign/TRUE/449/3" title="Show variation 3 of sign">Variation 3 - Fingerspelled</a></li></ul><!-- End Tags v2 -->
+
+									</div><!--End desc-->
+								</div><!--End service-->
+
+								<hr class="devider devider-dotted" style="margin: 0; padding: 0;">
+						
+						<div class="service">
+								<i class="fa fa-plus service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Add to Word List</h5><p>The ability to create <a href="wordlist" title="Learn more about word lists.">word lists</a> is available full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a> to use this feature.</p></div><!--End desc-->
+							</div><!--End service-->
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;">					</div>
+
+					<div class="tab-pane fade in" id="tab-options" style="display:none"><div class="service">
+								<i class="fa fa-signal service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Default Video Quality</h5><p>Higher resolution videos are available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></p>			</div><!--End desc-->
+							</div><!--End service-->	
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;"><div class="service">
+								<i class="fa fa-caret-square-o-right service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Default Autoplay Video</h5><p>Default autoplay video available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></p>			</div><!--End desc-->
+							</div><!--End service-->	
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;"><div class="service">
+								<i class="fa fa-repeat service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Default Loop Video</h5><p>Default looping video available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></p>			</div><!--End desc-->
+							</div><!--End service-->	
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;"><div class="service">
+								<i class="fa fa-tachometer service-icon"></i>
+								<div class="desc">
+								  <h5 class="text-transform-uppercase">Default Video Speed</h5><p>Default video speed adjustments available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></p>			</div><!--End desc-->
+							</div><!--End service-->	
+							
+							<hr class="devider devider-dotted" style="margin: 0; padding: 0;"><div class="service">
+									<i class="fa fa-print service-icon"></i>
+									<div class="desc">
+									  <h5 class="text-transform-uppercase">Print Sign</h5><p>Printing signs is available to full members. Login or <a href="member" title="This feature is available only to full members.">sign up now!</a></p>			</div><!--End desc-->
+								</div><!--End service-->	
+								
+								<hr class="devider devider-dotted" style="margin: 0; padding: 0;"></div> <!--End options tab--><div class="tab-pane fade in" id="tab-comments" style="display:none"><div class="signing_comments"><h2>User Comments</h2><div class="panel panel-success">				<div class="panel-heading">				<h3 class="panel-title text-transform-uppercase"><i class="fa fa-info-circle"></i>NOTE</h3></div><div class="panel-body">					<p>Comments are attached to the specific sign variation for a word. Please add the comment to the specific variation that the comment applies to.</p>				</div>			</div><form class="comment-button-reply" id="add-comment-449-0" method="get">				<input type="image" name="submit" src="images/buttons/comments/btn_addcomment_norm.png" alt="Reply">			</form><script type="text/javascript">			$(document).ready(function(){				$("#add-comment-449-0").submit(function (event) {					event.preventDefault();					$("#save-comment-449-0").slideToggle("slow");					$("#save-comment-449-0 #title").focus();				});			});		 </script><div id="save-comment-449-0" style="display:none;"><p>You must be a member to add comments. If you already are, please login. If not, <a href="member">become a member</a> now.</p></div></div></div>
+				</div>
+			</div>
+			<!-- End Tab v1 -->
+		</div> <!-- sign_module -->							</div>
+
+                            <div class="ad_module">	<!-- Bottom ad 728x90, created 1/6/09 -->	<script type="text/javascript" src="//ap.lijit.com/www/delivery/fpi.js?z=429487&width=728&height=90"></script>	</div> <!-- END ad_module --> 
+                        </div> <!-- END main_content_left -->
+                        
+                        <div id="main_content_right">
+                            <div style="border: 2px solid #3688a3;"><p style="font-size: small; text-align: center; color: #3688a3;">ADVERTISEMENTS</p>					<div class="ad_module">						<!-- Sidebar ad 160x600, created 1/6/09 -->	<script type="text/javascript" src="//ap.lijit.com/www/delivery/fpi.js?z=429489&width=160&height=600"></script>	<br /><br />						<br /><br />					</div> <!--END ad_module-->  										<div class="ad_module">						<!-- Sidebar ad 160x600, created 1/6/09 -->	<script type="text/javascript" src="//ap.lijit.com/www/delivery/fpi.js?z=429489&width=160&height=600"></script>	<br /><br />						<br /><br />					</div> <!--END ad_module-->  										<div class="ad_module">						<!-- Sidebar ad 160x600, created 1/6/09 -->	<script type="text/javascript" src="//ap.lijit.com/www/delivery/fpi.js?z=429489&width=160&height=600"></script>	<br /><br />						<br /><br />					</div> <!--END ad_module-->  					</div>                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Footer -->
+            		<div id="footer">		<div id="footer_inner">			<div id="footer_logo">				<a href="https://www.signingsavvy.com/"><img src="https://www.signingsavvy.com/images/footer_logo.gif" alt="sslogo"></a>			</div><!-- END footer_logo --> 			<div id="footer_copyright">					<div id="show_social">	<a type="application/rss+xml" href="https://www.signingsavvy.com/rss.xml" title="rss feed"><img src="https://www.signingsavvy.com/graphics/social-icons/rss-32x32.png" width="32" height="32" alt="rss feed" /></a>		<a href="l/www.facebook.com/pages/Signing-Savvy-Your-Sign-Language-Resource/73745154379" title="facebook page"><img src="https://www.signingsavvy.com/graphics/social-icons/facebook-32x32.png" width="32" height="32" alt="facebook page" /></a>		<a href="l/twitter.com/SigningSavvy" title="twitter page"><img src="https://www.signingsavvy.com/graphics/social-icons/twitter-32x32.png" width="32" height="32" alt="twitter page" /></a>	<a href="l/www.youtube.com/user/SigningSavvy" title="youtube channel"><img src="https://www.signingsavvy.com/graphics/social-icons/youtube-32x32.png" width="32" height="32" alt="youtube channel" /></a>		<a href="l/itunes.com/apps/signingsavvymemberapp" title="Mobile Member App available in App Store"><img src="https://www.signingsavvy.com/media/Download_App_Store.png" width="92" height="32" alt="Apple App Store" /></a>	<a href="l/play.google.com/store/apps/details?id=com.signingsavvy.mobile" title="Mobile Member App available in Google Play"><img src="https://www.signingsavvy.com/media/google-play-badge.png" width="96" height="32" alt="Google Play" /></a>		<a href="gift" title="Purchase a Signing Savvy Gift Membership"><img src="https://www.signingsavvy.com/images/givegift.gif" width="92" height="32" alt="Gift" /></a>		</div>	Copyright 2019 Signing Savvy, LLC.  All Rights Reserved			</div><!-- END footer_copyright -->			<div id="footer_nav">				<ul>					<li><a href="https://www.signingsavvy.com/">Home</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/search">Signs</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/fingerspelling">Fingerspelling</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/numbers">Numbers</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/sentences">Sentences</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/wordlists">Lists</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/lessons">Lessons</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/asloneonone">Tutoring</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/blog">Blog</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/features">Features</a>&nbsp;|&nbsp;</li>									<li><a href="https://www.signingsavvy.com/about">About Us</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/faq">FAQ</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/requirements">System Requirements</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/mobile">Mobile Apps</a>&nbsp;|&nbsp;</li>										<li><a href="https://www.signingsavvy.com/termsofservice">Terms of Service</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/privacypolicy">Privacy Policy</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/contact">Contact Us</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/link">Link to Us</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/recommendation">Recommend Us</a>&nbsp;|&nbsp;</li>					<li><a href="https://www.signingsavvy.com/member">Membership</a></li>									</ul>			</div>								</div><!-- END footer_inner --> 	</div><!-- END footer --> 	<script async defer src="//assets.pinterest.com/js/pinit.js"></script>	        </div> <!-- END frame -->     
+
+    </body>
+</html>
+
+

@@ -2,13 +2,13 @@ NOT~DON’T
 not good
 not bad
 not like this
-I don’t know
-someone can’t do this
+I don't know
+someone can't do this
 
 CAN
 someone can do something
-someone can’t do something
-someone can’t not do something
+someone can't do something
+someone can't not do something
 something (good/bad) can happen
 it can be like this: …
 
@@ -64,8 +64,8 @@ not like this anymore
 I~ME
 I want to do/know/say something
 I want this
-I don’t want this
-I don’t know
+I don't want this
+I don't know
 something bad can happen to me
 someone like me
 
@@ -141,10 +141,10 @@ someone wants something to happen
 I want it very much
 
 DON’T WANT
-I don’t want this
-someone doesn’t want this
-someone doesn’t want to do something
-someone doesn’t want something to happen
+I don't want this
+someone doesn't want this
+someone doesn't want to do something
+someone doesn't want something to happen
 
 FEEL
 someone feels something (good/bad)
@@ -157,7 +157,6 @@ someone does something with
 something else/part of the body
 someone does something with someone else
 someone does something good (for someone else)/bad (to someone else)
-someone else)/bad (to someone else)
 
 SAY
 I say: ...
@@ -175,14 +174,12 @@ this someone knows it
 this someone knows something (a lot)
 about someone/something
 people can know this
-[I know that ... = it is like this: …, I know
-it]
+[I know that ... = it is like this: …, I know it]
 
 SEE
-someone sees someone/something (in
-a place)
-people can/can’t see well in this place
-someone/people can/can’t see this something
+someone sees someone/something (in a place)
+people can/can't see well in this place
+someone/people can/can't see this something
 
 HEAR
 someone hears something
@@ -274,7 +271,7 @@ parts of this someone’s body move as this someone wants
 TOUCH
 something touches something else (somewhere)
 something touches part of someone’s body
-someone/people can/can’t touch this something
+someone/people can/can't touch this something
 
 INSIDE
 inside this something

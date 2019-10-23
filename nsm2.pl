@@ -1,22 +1,24 @@
-%primes = {};
+$primes = {};
 @titles = ();
 @allterminals = ();
 while (<STDIN>) {
 	chomp;
 	$title = $_;
-	@sentences = ();
-	$line = <STDIN>;
-	while ($line =~ /^.+$/) {
-		$sentence = $line;
-		chomp $sentence;
-		push (@sentences, ($sentence));
-		@terminals = ($sentence =~ m/(\w+|\W+|can't|don't|doesn't)/g);
+	@rule = ($_ =~ m/([~A-Z\' \(\)\/]+[^Ia-z])([^Ia-z])((.|[^\n])*)/g);
+	$title = $rule[0];
+	$title =~ s/[ \t]*$//;
+	$title =~ s/\//;/g;
+	$r = $rule[1].$rule[2];
+	$r =~ s/^ *//;
+	if ($r) {
+		@sentences = split(',', $r);
+		@terminals = ($r =~ m/([\w|']+)/g);
 		push (@allterminals, @terminals);
-		$line = <STDIN>;
 	}
-
-	push (@titles, $title);
-	$primes{$title} = '"'.join('", "', @sentences).'"';
+	if ($title) {
+		push (@titles, $title);
+		$primes{$title} = '"'.join('", "', @sentences).'"';
+	}
 }
 @allterminals = do { my %seen; grep { !$seen{$_}++ } @allterminals };
 @allterminals = sort(@allterminals);
@@ -74,11 +76,12 @@ open (VIDEOS, "<videos.txt");
 @videos = <VIDEOS>;
 close (VIDEOS);
 foreach (sort(@titles)) {
+	$title = $_;
 	$video = $_;
 	@video = grep /\b$video\b/, @videos;
 	$video = @video[0];
 	$video =~ s/.*\/(.*)"\n/mp4s\/$1/;
-	print ("<button onclick='editSentences(\"".$_."\", ".$primes{$_}."); return false;' id='".$_."'><video autoplay height='64' width='64' src='$video' ></video><a href=\"https://www.signingsavvy.com/sign/".$_."\">".$_."</a></button>\n");
+	print ("<button onclick='editSentences(\"".$title."\", ".$primes{$title}."); return false;' id='".$title."'><video loop height='64' width='64' src='$video' ></video><a href=\"https://www.signingsavvy.com/sign/".$title."\">".$title."</a></button>\n");
 }
 print ("</div>\n");
 
@@ -99,8 +102,8 @@ foreach (sort(@allterminals)) {
 	$video =~ s/[()=\[\]]//g;
 	@video = grep /\b($video|can't|don't|doesn't)\b/, @videos;
 	$video = @video[0];
-	$video =~ s/.*\/(.*)"/mp4s\/$1/;
-	print ("<button onclick='addTerminal(\"".$terminal."\"); return false;'><video autoplay height='64' width='64' src='$video'></video><a href=\"https://www.signingsavvy.com/sign/".$prime."\">".$terminal."</a></button>\n");
+	$video =~ s/.*\/(.*)"\n/mp4s\/$1/;
+	print ("<button onclick='addTerminal(\"".$terminal."\"); return false;'><video loop height='64' width='64' src='$video'></video><a href=\"https://www.signingsavvy.com/sign/".$prime."\">".$terminal."</a></button>\n");
 }
 print ("</div>\n");
 print ("</body>\n");
