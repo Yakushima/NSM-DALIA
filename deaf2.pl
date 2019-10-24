@@ -11,7 +11,7 @@ sub pdeaf {
 		$outputfiles = $files;
 		$outputfiles =~ s/.*\/(.*)/mp4s\/$1/;
 		if (! -e $outputfiles && $outputfiles) {
-			print ("wget64 --output-document='$outputfiles' http://www.signbank.org/signpuddle2.0/searchsign.php?ui=1&sgn=4&sid=8806&sTrm=$files&sTxt=&sSrc=&&type=&bldSearch=\n");
+			print ("wget64 --output-document='$outputfiles' 'https://www.signingsavvy.com/$files'\n");
 		}
 		if ($files) {
 			push(@pvideos,  '"'.@_[0].'":"'.$files.'"');
@@ -37,7 +37,7 @@ while (<STDIN>) {
 foreach (@titles) {
 	$title = $_;
 	if (! -e "primes/".$title) {
-		print ("wget64  --output-document=\"primes/".$title."\" \"http://www.signbank.org/signpuddle2.0/searchsign.php?ui=1&sgn=4&sid=8806&sTrm=$title&sTxt=&sSrc=&&type=&bldSearch=\"\n");
+		print ("wget64  --output-document=\"primes/".$title."\" \"https://www.signingsavvy.com/sign/".$title."\"\n");
 	}
 	push (@videos,  &pdeaf("primes/$title"));
 
@@ -47,7 +47,7 @@ foreach (@titles) {
 		$sentence = $_;
 		$sentence =~ s/\//;/g;
 		if (! -e "frames/$sentence") {
-			print ("wget64  --output-document=\"frames/".$sentence."\" \"http://www.signbank.org/signpuddle2.0/searchsign.php?ui=1&sgn=4&sid=8806&sTrm=$sentence&sTxt=&sSrc=&&type=&bldSearch=\"\n");
+			print ("wget64  --output-document=\"frames/".$sentence."\" \"https://www.signingsavvy.com/sign/".$sentence."\"\n");
 		}
 		push (@videos, &pdeaf("frames/$sentence"));
 	}
