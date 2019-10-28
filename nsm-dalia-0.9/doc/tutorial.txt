@@ -167,7 +167,7 @@ DALIA> so("outputfile.txt").
 DALIA> pf("demo/sentences.txt").
  **  Output written to file "outputfile.txt"
 
-By doing this, you get a text file (outputfile.txt) with the the
+By doing this, you get a text file (outputfile.txt) with the
 parsing of the file "sentences.txt".
 
 
