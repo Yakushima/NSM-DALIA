@@ -32,12 +32,11 @@ modules, will follow.
 
 NSM-DALIA has (so far) only a command-line interface. To run
 NSM-DALIA, open the file "dalia-cline.tm" into the SWI-PROLOG
-interpreter. NOTE: dalia-cline.tm seems to be missing from
-the zip archive for the 0.9 version. These instructions work
-for SWI-Prolog version 5.4.7, with the error message on loading
-using  "['dalia_cline']." as follows:
+interpreter.
 
-Type error: `export_declaration' expected, found `dg_morph:parse_word/7'
+NOTE: dalia-cline.tm seems to be missing from
+the zip archive for the 0.9 version. These instructions work
+for SWI-Prolog version 5.6.61.
 
 These instructions have not been tested successfully with any
 later verions of SWI-Prolog, so far.
@@ -79,7 +78,7 @@ For example, you can type:
 DALIA> ps("I am doing something good").
 
 NSM-DALIA will output:
-ct(s, s(e, e, e, e, e, p(i(do), [a:sp(e, e, sing(e), [], me), o:sp(e, e, sing(e), [good], something(0)), d:e, c:e, i:e]), e, e))
+ct(s, s(e, e, e, e, e, p(i(do), [a:sp(e, e, e, [], d(me)), o:sp(e, e, e, [good], something(thing)), d:e, c:e, i:e, b:e]), e, e)).
 
 which is the corresponding NSM-PROLOG formula.
 
@@ -89,6 +88,9 @@ DALIA> gs(ct(s, s(e, e, e, e, e, p(i(do), [a:sp(e, e, sing(e), [], someone(0)), 
 you get the following output:
 
   someone  is  doing  something  good
+  
+NOTE: maybe in NSM-DALIA 0.8, but in 0.8 nothing. However, making
+the result from the ps call the input to gs does echo back "I am doing something good".
  
 Now suppose you want to translate from English NSM to, say, Tok Pisin
 NSM. Your L1 is set to English; to load and set the L2 module, use the
@@ -101,10 +103,7 @@ DALIA> l2(tpi).
  ** Current L2 set to Tok Pisin
 
 Of course, this will work when a Tok Pisin module will be written (I
-am writing one). NOTE: this appears to be available in 0.9
-For the time being, the only answer you will get is:
-
- ** No "tpi" language module found
+am writing one). 
 
 Supposing you have loaded a Tok Pisin module as L2, if later you want
 to translate from Tok Pisin into English, you only need to switch
