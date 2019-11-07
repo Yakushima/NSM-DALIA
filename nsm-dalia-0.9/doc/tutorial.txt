@@ -36,12 +36,12 @@ interpreter.
 
 NOTE: dalia-cline.tm seems to be missing from
 the zip archive for the 0.9 version. These instructions work
-for SWI-Prolog version 5.6.61.
+for SWI-Prolog version 6.4.0.
 
 These instructions have not been tested successfully with any
 later verions of SWI-Prolog, so far.
 
-UNTESTED ON LINUX with Prolog 5.4.7:
+UNTESTED ON LINUX with SWI-Prolog 6.4.0:
 (By double-clicking the file; LINUX users will start a
 console, use a cd command to move to the NSM-DALIA-0.9 directory, and
 load dalia-cline.tm into SWI-PROLOG with the command "pl dalia-cline.tm").
