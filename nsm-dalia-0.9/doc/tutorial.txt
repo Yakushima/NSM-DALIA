@@ -19,7 +19,7 @@
 
 */
 
-			NSM-DALIA version 0.8
+			NSM-DALIA version 0.9
 
 NSM-DALIA is a natural language parser and generator, which is
 especially tailored to the NSM subset of a natural language, but can
