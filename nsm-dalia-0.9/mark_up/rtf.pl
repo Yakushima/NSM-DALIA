@@ -86,7 +86,7 @@ markup_text(id_before," {\\super\\f0\\cf3 ").
 markup_text(id_after,"}\n").
 
 markup_text(pre_nsm_sent,"").
-markup_text(post_nsm_sent,"\line\n").
+markup_text(post_nsm_sent,"\\line\n").
 
 markup_text("p","\\par\\pard\\sa200\\qj\\b0\\i0\\f0\\fs24\\cf1 ").
 markup_text("/p","\n").
