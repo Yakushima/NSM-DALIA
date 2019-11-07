@@ -52,18 +52,18 @@
 gpl(Program,Version,Year,Author,S) :-
     append_list(S,["** Welcome to ",Program," (version ",Version,
 		   "). Copyright (C) ",
-		   Year, " ", Author, ".\n\
-		    ** This program comes with ABSOLUTELY \
-		   NO WARRANTY; for details type `w'. \n\
-		    ** This is free software, and you are welcome to \
-		   redistribute it under certain conditions; \n\
+		   Year, " ", Author, ".\n\c
+		    ** This program comes with ABSOLUTELY \c
+		   NO WARRANTY; for details type `w'. \n\c
+		    ** This is free software, and you are welcome to \c
+		   redistribute it under certain conditions; \n\c
 		   type `c' for details."]).
 
 %%	gnu_no_warranty(-Text) is det
 %
 %	Unifies Text with the GNU GPL no-warranty disclaimer.
 %	
-gnu_no_warranty("THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM ìAS ISî WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n").
+gnu_no_warranty("THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM ‚ÄúAS IS‚Äù WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.\n").
 
 %%	gnu_conditions(-Text) is det
 %
