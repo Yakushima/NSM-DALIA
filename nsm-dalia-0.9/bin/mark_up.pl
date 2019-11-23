@@ -2,6 +2,7 @@
 		   write_toc/2,
 		   write_auto_text/2
 		  ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(utils).
 

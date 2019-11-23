@@ -22,6 +22,7 @@
 
 /*
 
+:- set_prolog_flag(double_quotes,codes).
 :- op(500,xfx,:).
 :- op(500,fx,'U').
 

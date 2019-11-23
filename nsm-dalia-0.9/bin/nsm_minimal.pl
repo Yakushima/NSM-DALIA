@@ -10,6 +10,7 @@
 		       inst_dependants_aux/4,
 		       close_slots/1
 		      ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- include('operators.pl').
 

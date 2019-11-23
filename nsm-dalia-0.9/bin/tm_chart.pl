@@ -18,6 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
+:- set_prolog_flag(double_quotes,codes).
 
 :- include('operators.pl').
 :- include('dynamic.pl').

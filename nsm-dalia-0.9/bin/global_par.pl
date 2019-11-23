@@ -19,6 +19,7 @@
 		      get_current_l2/1,
 		      get_synt_grammar_type/2
 		  ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(config).
 

@@ -2,6 +2,7 @@
 		print_grammar/0,
 		print_formatted_grammar/3
 	       ]).
+:- set_prolog_flag(double_quotes,codes).
 :- include(operators).
 
 :- use_module(rule_formatter).

@@ -26,6 +26,7 @@
 		  dg_parse_text_level/3,
 		  dg_gen_text_level/3
 		 ]).
+:- set_prolog_flag(double_quotes,codes).
 		  
 /** <module> Dependency grammar
 

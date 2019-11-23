@@ -2,6 +2,7 @@
 		    parse_word_standalone/4,
 		    dg_morph:parse_word/7
 		   ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(word_scanner).
 :- use_module(morphophon).

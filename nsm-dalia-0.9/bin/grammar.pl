@@ -24,6 +24,7 @@
 		  load_lang/2,
 		  build_lang/2
 		 ]).
+:- set_prolog_flag(double_quotes,codes).
 	  
 /** <module> Grammar loader
 

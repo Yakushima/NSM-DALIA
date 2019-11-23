@@ -21,6 +21,7 @@
 :- module(file_reader,[
 		       parse_file/1
 		      ]).
+:- set_prolog_flag(double_quotes,codes).
 
 
 :- use_module(global_par).

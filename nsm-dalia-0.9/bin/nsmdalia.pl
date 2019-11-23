@@ -57,6 +57,7 @@
 		    
 		    list/0
 		   ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- include(operators).
 

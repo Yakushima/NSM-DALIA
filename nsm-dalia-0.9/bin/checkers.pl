@@ -26,6 +26,7 @@
 		       check_syntagmeme/4,
 		       check_pred/2,
 		       check_succ/2]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(messages).
 

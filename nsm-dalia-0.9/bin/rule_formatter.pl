@@ -8,6 +8,7 @@
 			  print_format_mseq_rule/3
 			 ]).
 
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(utils).
 :- use_module(mark_up).

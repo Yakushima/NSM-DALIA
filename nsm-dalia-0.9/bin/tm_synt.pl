@@ -19,6 +19,7 @@
 
 */
 
+:- set_prolog_flag(double_quotes,codes).
 
 % VERSIONE STANDALONE DEL CHART-PARSER E GENERATORE TOP-DOWN XSTAGMEMICO
 

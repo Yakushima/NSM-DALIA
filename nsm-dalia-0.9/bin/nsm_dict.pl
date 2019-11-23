@@ -6,6 +6,7 @@
 		    assert_found_morph/3,
 		    parse_SIL_record/3
 		   ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(messages).
 :- use_module(utils).

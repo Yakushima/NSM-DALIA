@@ -26,6 +26,7 @@
 		      find_morph/7,
 		      match_pattern/4
 		     ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(messages).
 :- use_module(checkers).

@@ -47,6 +47,7 @@
 	do_actions/2,
 	read_ident/3
 	]).	
+:- set_prolog_flag(double_quotes,codes).
 	
 
 :- include('operators.pl').

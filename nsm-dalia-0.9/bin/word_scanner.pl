@@ -22,6 +22,7 @@
 :- module(word_scanner,[
 			get_word/3
 		       ]).
+:- set_prolog_flag(double_quotes,codes).
 
 /** <module> 
 

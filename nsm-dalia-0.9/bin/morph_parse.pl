@@ -24,6 +24,7 @@
 		       tm_morph_all_readings/5,
 		       p_morph_lex/3
 		      ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- include('operators.pl').
 

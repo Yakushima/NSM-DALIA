@@ -53,6 +53,7 @@
 			   pg/0,
 			   swtt/1
 			  ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(nsmdalia).
 :- use_module(file_reader).
@@ -684,5 +685,5 @@ loop :-
 %       Procedure run calls init/0, then enters the main loop.
 %       Fails on bugs
 %       
-run :- init,loop.
+run :- init, loop.
 
