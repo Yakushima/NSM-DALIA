@@ -26,9 +26,8 @@
 :- run.
 
 go :-
-	
+
 	grammar:ph(eng:e,"-y",B,C,D,E,F,G,H,I,J),
 	!,
 	rule_formatter:print_format_ph_rule(eng:e,rtf,
 ph("-y",B,C,D,E,F,G,H,I,J)).					    
-					    

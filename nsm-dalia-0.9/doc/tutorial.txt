@@ -36,10 +36,7 @@ interpreter.
 
 NOTE: dalia-cline.tm seems to be missing from
 the zip archive for the 0.9 version. These instructions work
-for SWI-Prolog version 6.4.0.
-
-These instructions have not been tested successfully with any
-later verions of SWI-Prolog, so far.
+for SWI-Prolog up to version 7.6.4.
 
 UNTESTED ON LINUX with SWI-Prolog 6.4.0:
 (By double-clicking the file; LINUX users will start a
@@ -89,9 +86,6 @@ you get the following output:
 
   someone  is  doing  something  good
   
-NOTE: maybe in NSM-DALIA 0.8, but in 0.8 nothing. However, making
-the result from the ps call the input to gs does echo back "I am doing something good".
- 
 Now suppose you want to translate from English NSM to, say, Tok Pisin
 NSM. Your L1 is set to English; to load and set the L2 module, use the
 "l2" command:
@@ -113,13 +107,6 @@ DALIA> sl1(tpi).
 
  ** Current L1 set to Tok Pisin
  
- NOTE: this yields the error messages:
-   Warning: Goal (directive) failed: user:run
-  % dalia_cline compiled 0.02 sec, 1,061,192 bytes
-
-And the "DALIA>" prompt is lost. Typing the command
-again into SWI-Prolog 5.4.7 only yields "No".
-
 DALIA> sl2(eng).
 
  ** Current L2 set to English
