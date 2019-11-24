@@ -1,6 +1,6 @@
 ---+                                  NSM-DALIA 
 
-@version 1.0
+@version 0.9
 @author Francesco Zamblera
 @license gnu gpl
 
