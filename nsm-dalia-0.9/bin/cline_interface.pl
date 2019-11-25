@@ -640,7 +640,7 @@ pg :- gdoc:print_grammar.
 end_of_file :- halt.
 
 write_gnu :-
-	gpl("DALIA","1.0","2009","Francesco Zamblera",S),
+	gpl("DALIA","0.9","2009","Francesco Zamblera",S),
 	put_string(S),
 	nl.
 

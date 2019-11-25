@@ -20,7 +20,7 @@
 */
 
 :- set_prolog_flag(double_quotes,codes).
-:- load_files('./bin/cline_interface.pl',[silent(true)]).
+:- load_files('./bin/cline_interface.pl',[silent(false)]).
 :- include('./macros.pl').
 % :- style_check(-atom).
 :- run.
