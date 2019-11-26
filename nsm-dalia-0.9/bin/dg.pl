@@ -295,8 +295,8 @@ lex(_Lang,group,[],_).
 %	
 dg_gen_text_level(_,T,T).
 /*
-% prima clausola: so non ho dipendenze di livello testo, 
-% inutile fare lo scanning
+% "first clause: I know I have no text level dependencies,
+%  no need to scan" [it->en]
 dg_gen_text_level(Lang,T,T) :-
 	max_dep_threshold(Lang,Threshold),
 	actual_max_dep(Lang,MaxDep),

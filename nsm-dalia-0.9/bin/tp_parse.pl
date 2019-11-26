@@ -404,7 +404,7 @@ parse_file(F) :-
 	close_output_file,
 	!.
 
-% @ All'inizio riga
+% @ "At the beginning of the line" [it->en]
 parse_f_init(64,Mode) :-
 	!,
 	get0(Look),

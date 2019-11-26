@@ -637,7 +637,7 @@ inst_dependants_aux([Item|Inst],HF1,HF2,BIND_VARS) :-
 
 
  
-% se manca b nella lista a, a::b istanzia comunque dopo a
+% "if b is missing from the list a, a :: b it still instantiates after a" [it->en]
  
 inst_lower(_,[],[],_) :- !.
 inst_lower(Tag::Path,[Tag::SubList|L1],[Tag::NewSubList|L2],YES) :-
@@ -739,6 +739,6 @@ get_value(Tag,List,Value) :-
 	 l::lower,       % from that level down, all can be <> e (in h)
 	 a::slot,        % h-slot to which dep is to be attached
 	 ac::slot,       % like a, but with empty-slot filling by 'e'.
-	 bind::[df=>hf]  % lega slots di h e dep	 
+	 bind::[df=>hf]  % "alloy slots of h and dep" [it->en]
 	].
 */
