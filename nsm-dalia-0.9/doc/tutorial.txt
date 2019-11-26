@@ -32,22 +32,28 @@ modules, will follow.
 
 NSM-DALIA has (so far) only a command-line interface. To run
 NSM-DALIA, open the file "dalia-cline.tm" into the SWI-PROLOG
-interpreter.
+interpreter, by double-clicking the file.
 
 NOTE: dalia-cline.tm seems to be missing from
-the zip archive for the 0.9 version. These instructions work
-for SWI-Prolog up to version 8.0.0.
+the zip archive for the 0.9 version. The following instructions
+instructions work for SWI-Prolog up to version 8.0.0, on Windows,
+using Cygwin for the shell commands, just by starting SWI-Prolog
+with the command "swipl" -- just make sure that this is added
+to your path. Untested on LINUX.
 
-UNTESTED ON LINUX with SWI-Prolog 6.4.0:
-(By double-clicking the file; LINUX users will start a
-console, use a cd command to move to the NSM-DALIA-0.9 directory, and
-load dalia-cline.tm into SWI-PROLOG with the command "pl dalia-cline.tm").
+(According to the original instructions in the .zip file at
+http://www.vilnergoy.org/nsm/index.html:
+LINUX users will start a console, use a cd command to
+move to the NSM-DALIA-0.9 directory, and load dalia-cline.tm
+into SWI-PROLOG with the command "pl dalia-cline.tm").
 
 When NSM-DALIA is launched, a command-line console will pop up,
 printing the usual "GNU-welcome" message, and then prompting the
 user:
 
 DALIA>
+
+Note: the "DALIA>" prompt may appear only after you issue a command.
 
 Now you can control the program by entering commands at the prompt,
 followed by <ENTER>. Most commands have a short form for quick typing,
@@ -107,6 +113,8 @@ DALIA> sl1(tpi).
 
  ** Current L1 set to Tok Pisin
  
+Note: this currently fails.
+
 DALIA> sl2(eng).
 
  ** Current L2 set to English
@@ -142,10 +150,9 @@ You can also redirect your output to files:
 DALIA> so("outputfile.txt").
  **  Output file set to "outputfile.txt"
 
-DALIA> pf("demo/sentences.txt").
+DALIA> pf("demo/eng_sentences.txt").
  **  Output written to file "outputfile.txt"
 
 By doing this, you get a text file (outputfile.txt) with the
 parsing of the file "sentences.txt".
-
 
