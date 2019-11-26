@@ -26,6 +26,7 @@ are defined in NSM);
 ---++ Starting NSM-DALIA
 
 SWI-PROLOG must be installed in your system for NSM-DALIA to  work.
+NSM-DALIA passes basic tests up to SWI-Prolog version 8.0.0.
 
 You can start NSM-DALIA on Windows by double-clicking on the file "dalia_cline.pl".
 
