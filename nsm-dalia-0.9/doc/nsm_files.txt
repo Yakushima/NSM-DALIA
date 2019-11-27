@@ -1,6 +1,6 @@
 ---+ NSM INPUT FILES
 
-An NSM input file is a text file, with some special tags which show to
+An NSM input file is a text file, with some special tags which show
 NSM-DALIA what to do.
 
 When NSM-DALIA parses such a file, it works in normal file-reading
@@ -18,10 +18,10 @@ Here is a quick tour of the main tags implemented so far. Other will
 be made available as the program is developed.
 
 $ @p :
-Following text is split into sentences (fullstop-separated), parsed
+The text that follows is split into sentences (fullstop-separated), parsed
 and transformed into NSM-PROLOG notation, until an @e tag is
-found. Then, normal file-reading mode is resumed. You will find many
-example of how this works in the "sentences.txt" file, in the demo
+found. Then, normal file-reading mode resumes. You will find many
+examples of how this works in the "sentences.txt" file, in the demo
 directory. See what happens when you run a pf("demo/sentences.txt")
 command in NSM-DALIA: the sentences between a @p ... @e block are
 replaced (in the output) by their NSM-PROLOG analysis, while all the
@@ -30,14 +30,14 @@ in a @p .. @e block is NOT in NSM format, but sentences must be
 fullstop-separated, and indentation plays no role.
 
 $ @P :
-Text in a @P ... @e block is considered to be in NSM- standard
+Text in a @P ... @e block is considered to be in NSM-standard
 format. See examples of this in the "texts.txt" file, in the "demo"
 directory. The NSM standard format uses newline as sentence separator,
 no punctuation, and indentation as a means of showing quotation. If
 you want to split a long line, but you want the parser to consider the
 new line as a continuation of the previous sentence, put a "/" or a
 "\" at the end of the first part, and indentation and newline will be
-not considered. Ex. in the following text, all indentations and
+not considered. E.g., in the following text, all indentations and
 newlines are significative:
 
 ==
@@ -58,26 +58,26 @@ this person thinks like this
 
 $ @t :
 Text in a @t ... @e block is translated from current_language NSM into
-curernt_l2 NSM. If current_language and current_l2 are the same, text
+current_l2 NSM. If current_language and current_l2 are the same, text
 is not first parsed and then re-generated in the same language, but
 simply output as it is. Text is in normal format, with fullstops
 showing sentence boundaries.
 
 $ @T :
-As before, but this time, text must be in NSM standard format.
+As before, but in this case, text must be in NSM standard format.
 
 $ @g :
 Text in a "@g ... end." block is read as NSM-PROLOG formulas, and
 replaced by its equivalent in the target language. Note that this
-block is ended by an "end." tag (with fullstop!), and not by the usual
+block is terminated by an "end." tag (with fullstop!), and not by the usual
 "@e" tag. If generation fails for some reason, the formula is output
 unchanged. You can see how this and the following tag work by making
 NSM-DALIA parse the file "text-gen.txt", in the "demo" directory. Text
 is in normal format.
 
 $ @G :
-As before, but with text in NSM standard format. The end of the block
-is given by and "end." command (with fullstop), instead of the usual
+As with "@g", but with text in NSM standard format. The end of the block
+is given by an "end." command (with fullstop), instead of the usual
 "@e" tag.
 
 $ @@ :
