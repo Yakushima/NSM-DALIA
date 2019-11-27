@@ -645,7 +645,7 @@ write_gnu :-
 	nl.
 
 write_prompt :-
-	nl,write('DALIA> ').
+	nl,write('DALIA> '),flush_output.
 
 
 perform(stop) :-
