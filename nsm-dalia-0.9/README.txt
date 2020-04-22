@@ -18,7 +18,7 @@ With NSM-DALIA you can:
 * generate a sentence from an NSM-PROLOG formula;
 * translate a sentence from a language-particular NSM into another;
 * analyse, generate and translate whole texts, written according to the
-standard conventions of the NSM community and stored in files;
+standard conventions of the NSM community, and stored in files;
 * write an NSM dictionary (a dictionary of a language in which entries
 are defined in NSM);
 * write the grammar of (the NSM of) a language.
@@ -30,7 +30,7 @@ NSM-DALIA passes basic tests up to SWI-Prolog version 8.0.0.
 
 You can start NSM-DALIA on Windows by double-clicking on the file "dalia_cline.pl".
 
-On Linux, open a terminal and switch to the  NSM-DALIA directory; then start SWI-PROLOG
+On Linux, open a terminal and switch to the NSM-DALIA directory; then start SWI-PROLOG
 (the command should be simply "prolog"), and, when SWI-PROLOG is loaded, type
 ['dalia_cline']. at the PROLOG prompt.
 
