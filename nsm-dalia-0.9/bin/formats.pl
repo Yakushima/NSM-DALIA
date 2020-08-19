@@ -19,6 +19,7 @@
 
 */
 
+:- set_prolog_flag(double_quotes,codes).
 
 /* FORMATS */
 o_format(e,A,A).

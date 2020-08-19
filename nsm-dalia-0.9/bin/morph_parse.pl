@@ -24,6 +24,7 @@
 		       tm_morph_all_readings/5,
 		       p_morph_lex/3
 		      ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- include('operators.pl').
 
@@ -89,7 +90,7 @@ generic_p_morph(Lang,W,A,Lex) :-
 p_morph(Lang,W,m(Name,A),Lex) :-
 	append(W,"#",W2),
 	find_syntagmeme(Lang,W2,W1,synt(A1,P,C,Name),parsed("#",[],[]),Parsed),
-	scan_rest(Lang,W1,P,A1,A,Name,C,Parsed,parsed(_Surf,[45|Lex],_NewSuccLex)). %NewSuccLex dovrebbe essere [].
+	scan_rest(Lang,W1,P,A1,A,Name,C,Parsed,parsed(_Surf,[45|Lex],_NewSuccLex)). %"NewSuccLex should be []." [it->en]
 
 
 

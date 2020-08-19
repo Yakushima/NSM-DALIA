@@ -86,7 +86,7 @@ markup_text(id_before," {\\super\\f0\\cf3 ").
 markup_text(id_after,"}\n").
 
 markup_text(pre_nsm_sent,"").
-markup_text(post_nsm_sent,"\line\n").
+markup_text(post_nsm_sent,"\\line\n").
 
 markup_text("p","\\par\\pard\\sa200\\qj\\b0\\i0\\f0\\fs24\\cf1 ").
 markup_text("/p","\n").
@@ -136,7 +136,7 @@ markup_text(grammar_heading(L1,L2),
 {\\stylesheet\n\
 {\\s1\\f1\\cf3\\fs24 NSM1;}\n\
 {\\s2\\f2\\cf1\\fs28 NSM2;}\n\
-{\\s3\\f1\\cf1\\fs40\\qc\\sb500\\b\
+{\\s3\\f1\\cf1\\fs40\\qc\\sb500\\b\c
  \\brdrt\\brdrs \\brdrl\\brdrs \\brdrr\\brdrs\\lang1024 TITLE;}}\n"
 		       ]).
 markup_text(grammar_end,"}").
@@ -166,11 +166,11 @@ markup_text(pre_dep_rule(NUM,DIRECT),l:[
 "\n{\\pard\\sb250\\fs28\\cf2\\keepn ",NUM, " ", DIRECT, "\\par}\n",
 "\n{\\pard\\fs20\n\
 \\trowd\
-\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs\
+\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs\c
  \\trgaph144\\cellx3200\
-\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs\
+\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs\c
  \\trgaph144\\cellx6400\
-\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs\
+\\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs\c
  \\trgaph144 \\cellx9600\
 \\clbrdrt\\brdrs\\clbrdrl\\brdrs\\clbrdrb\\brdrs\\clbrdrr\\brdrs\n"
 				]).			  

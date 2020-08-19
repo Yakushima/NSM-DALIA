@@ -29,6 +29,8 @@
 		      ]).
 
 
+:- set_prolog_flag(double_quotes,codes).
+
 :- use_module(hex).
 :- use_module(messages).
 :- use_module(global_par).

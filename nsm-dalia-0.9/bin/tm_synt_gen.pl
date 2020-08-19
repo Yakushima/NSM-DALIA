@@ -20,6 +20,8 @@
 */
 
 
+:- set_prolog_flag(double_quotes,codes).
+
 :- include('operators.pl').
 :- include('dynamic.pl').
 

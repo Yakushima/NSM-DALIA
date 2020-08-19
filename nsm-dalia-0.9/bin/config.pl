@@ -24,6 +24,7 @@
 		  lang_bin_dir/1,
 		  supported_markup_list/1
 		 ]).
+:- set_prolog_flag(double_quotes,codes).
 
 /** <module> Configuration parameters
 

@@ -4,6 +4,7 @@
 	       get_uni_char/3,
 	       num2str/2
 	      ]).
+:- set_prolog_flag(double_quotes,codes).
 
 /** <module> Hexadecimal converter
 

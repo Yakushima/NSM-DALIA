@@ -19,6 +19,7 @@
 		      get_current_l2/1,
 		      get_synt_grammar_type/2
 		  ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(config).
 
@@ -127,7 +128,7 @@ set_double_text_format(Format) :-
 	asserta(current_double_format(Type)),
 	notify_double_format(Type).
 set_double_text_format(_) :-
-	put_message("Possible values:\n 0 (for whole_text format) \n\
+	put_message("Possible values:\n 0 (for whole_text format) \n\c
 	1 (for line_by_line format)").
 
 %%	set_output_file(+FileName:string) is det

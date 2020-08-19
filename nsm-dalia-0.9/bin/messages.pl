@@ -44,6 +44,7 @@
 		    notify_double_format/1,
 		    notify_missing/2
 		   ]).
+:- set_prolog_flag(double_quotes,codes).
 :- include('operators.pl').
 :- include('dynamic.pl').
 

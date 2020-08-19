@@ -1,6 +1,7 @@
 :- module(morph_gen,[
 		    scan_phonemes/3
 		   ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(checkers).
 

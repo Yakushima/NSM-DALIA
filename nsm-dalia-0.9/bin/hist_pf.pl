@@ -23,6 +23,7 @@
 :- module(hist_pf,[
 		   do_pf/5
 		  ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(utils).
 :- use_module(checkers).

@@ -20,6 +20,7 @@
 */
 
     
+:- set_prolog_flag(double_quotes,codes).
     
 
 :- op(700,xfx,<>).

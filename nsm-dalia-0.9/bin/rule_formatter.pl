@@ -8,11 +8,13 @@
 			  print_format_mseq_rule/3
 			 ]).
 
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(utils).
 :- use_module(mark_up).
 
-:- include('operators.pl'). % importante, per leggere bene dep
+:- include('operators.pl'). % "important, to read well dep" [it->en]
+
 
 :- dynamic(formatted_formula/5).
 
@@ -77,7 +79,7 @@ format_ph_cond_list([Cond|CondList],PS,SS,PL,SL,Num,NewNum) :-
 
 
 format_ph_cond(Var << Class,_PredSurf,_SuccSurf,_PredLex,_SuccLex,Num,Num) :-
-	% importante passarli, così Var viene istanziata anche lì
+	% "important to pass them, so Var is also instantiated there" [it->en]
 	var(Var),
 	!,
 	name(Class,X),

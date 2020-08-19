@@ -19,15 +19,15 @@
 
 */
 
+:- set_prolog_flag(double_quotes,codes).
 :- load_files('./bin/cline_interface.pl',[silent(true)]).
 :- include('./macros.pl').
-:- style_check(-atom).
+% :- style_check(-atom).
 :- run.
 
 go :-
-	
+
 	grammar:ph(eng:e,"-y",B,C,D,E,F,G,H,I,J),
 	!,
 	rule_formatter:print_format_ph_rule(eng:e,rtf,
 ph("-y",B,C,D,E,F,G,H,I,J)).					    
-					    

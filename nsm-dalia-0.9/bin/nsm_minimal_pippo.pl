@@ -5,6 +5,7 @@
 		       build_dr/5,
 		       univ/2
 		      ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- include('operators.pl').
 

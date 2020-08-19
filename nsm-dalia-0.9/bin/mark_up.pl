@@ -2,6 +2,7 @@
 		   write_toc/2,
 		   write_auto_text/2
 		  ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(utils).
 
@@ -13,12 +14,12 @@
 */
 
 /*
-MARKUP IDENTIFIER: 
-- STRINGA se lo voglio poter chiamare dal file con @f MARKUP-ID
-- ATOMO se lo volgio chiamare solo internamente (markup automatico del
-formato, tipo header rtf o latex)
-- PREDICATO se lo volgio chiamare solo internamente (markup automatico del
-formato, tipo header rtf o latex) e se devo mettere cose lang-specifiche
+MARKUP IDENTIFIER: [it->en Google translate]
+- "STRING if I want to be able to call from the file with @f MARKUP-ID."
+- "ATOM if I want to call it only internally (automatic markup of
+format, type header rtf or latex)."
+- "PREDICATED if I want to call it only internally (automatic markup of
+format, type header rtf or latex) and if I have to put lang-specific things."
 */
 
 %%	 load_markup is det
@@ -114,7 +115,7 @@ put_auto_text(_Markup,Text) :-
 	is_list(Text),
 	!,
 	put_string(Text).
-put_auto_text(Markup,Text) :- % Text è un Id ricorsivo, come per i font rtf
+put_auto_text(Markup,Text) :- % "Text is a recursive ID, like for rtf fonts" (it->en Google trans)
 	Text =.. [_|_],
 	!,
 	write_auto_text(Markup,Text).

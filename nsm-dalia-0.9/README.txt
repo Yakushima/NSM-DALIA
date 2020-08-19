@@ -1,15 +1,15 @@
----+                                  NSM-DALIA 
+---+                                  NSM-DALIA
 
-@version 1.0
+@version 0.9
 @author Francesco Zamblera
 @license gnu gpl
 
 ---++ Overview
-NSM-DALIA is a package for parsing and generating the subset of	
+NSM-DALIA is a package for parsing and generating the subset of
 a natural language known as its *|natural semantic metalanguage|*.
 
 Version 1.0 comes with a command-line interface: users write their
-commands at a prompt; commands are executed and results printed. 
+commands at a prompt; commands are executed and results printed.
 Then NSM-DALIA waits for another command.
 
 With NSM-DALIA you can:
@@ -18,7 +18,7 @@ With NSM-DALIA you can:
 * generate a sentence from an NSM-PROLOG formula;
 * translate a sentence from a language-particular NSM into another;
 * analyse, generate and translate whole texts, written according to the
-standard conventions of the NSM community and stored in files;
+standard conventions of the NSM community, and stored in files;
 * write an NSM dictionary (a dictionary of a language in which entries
 are defined in NSM);
 * write the grammar of (the NSM of) a language.
@@ -26,10 +26,13 @@ are defined in NSM);
 ---++ Starting NSM-DALIA
 
 SWI-PROLOG must be installed in your system for NSM-DALIA to  work.
+NSM-DALIA passes basic tests up to SWI-Prolog version 8.0.0.
 
-You can start NSM-DALIA on Windows by double-clicking on the file "dalia_cline.pl".
+You can start NSM-DALIA on Windows by double-clicking on the file
+"dalia_cline.pl". [Need instructions on how to bind the ".pl" suffix
+to SWI-Prolog.]
 
-On Linux, open a terminal and switch to the  NSM-DALIA directory; then start SWI-PROLOG
+On Linux, open a terminal and switch to the NSM-DALIA directory; then start SWI-PROLOG
 (the command should be simply "prolog"), and, when SWI-PROLOG is loaded, type
 ['dalia_cline']. at the PROLOG prompt.
 

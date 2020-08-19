@@ -18,6 +18,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 */
+:- set_prolog_flag(double_quotes,codes).
 
 :- include('operators.pl').
 :- include('dynamic.pl').
@@ -30,7 +31,7 @@ p_chart(Lang,MorphParser,Sent,Name:Parse,Rest) :-
 	retractall(edge(_,_,_,_,_,_,_)).
 p_chart(_Lang,_,Sent,noparse:Sent,[]) :-
 	retractall(edge(_,_,_,_,_,_,_)).
-%RIVEDERE SECONDA CLAUSOLA: RESTITUIRE FRASE SCORRETTA PARI PARI SOLO FINO A PUNTO E POI IL RESTO IN REST
+%"REVIEW SECOND CLAUSE: RETURN INCORRECT PHASE EQUAL TO ONLY UP TO POINT AND THEN THE REST IN REST" [it->en Google]
 
 
 init_chart(_Lang,_MorphParser,length(Max,Max),[],[]) :- !.
@@ -44,7 +45,7 @@ init_chart(Lang,MorphParser,length(N,M),Sent,Rest) :-
 
 get_next_word(_,_,[],[],[]).
 get_next_word(_Lang,e,[W|S],[W],S).
-%USO CON TM_MORPH
+%"USE WITH TM_MORPH" [it->en]
 get_next_word(Lang,tm_morph,String,W,Rest) :-
 	tm_morph_all_readings(Lang,tagm,String,W,Rest).
 

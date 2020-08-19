@@ -21,6 +21,7 @@
 :- module(file_reader,[
 		       parse_file/1
 		      ]).
+:- set_prolog_flag(double_quotes,codes).
 
 
 :- use_module(global_par).
@@ -431,9 +432,9 @@ get_indent_aux(C,C,Indent,Indent).
 
 
 
-/* GENERATORE IN FORMATO NSM */
+/* "NSM FORMAT GENERATOR" [it->en] */
 
-% GEN AND WRITE DOUBLE, traduzione testo a fronte (genera L2 e copia L1)
+% GEN AND WRITE DOUBLE, "translation of text to the front" [it->en]
 gen_and_write_2_nsm_text(L2,G,T,Format,S) :-
 	global_par:current_double_format(whole_text),
 	!,
@@ -482,7 +483,7 @@ is_end_of_list([],last).
 is_end_of_list([_|_],no_last).
 
 
-% GEN AND WRITE DOUBLE, legge formule da file e genera in 2 lingue
+% GEN AND WRITE DOUBLE, "reads formulas from files and generates in 2 languages" [it->en]
 read_gen_write_2_nsm_sent :-
 	read(Formula),
 	global_par:get_current_lang(L1),
@@ -565,7 +566,7 @@ add_label(Label,Indent,PF,String) :-
 	append(Spaces,PF,String1),
 	append(Label,String1,String).
 
-% GEN AND WRITE, SINGLE LANG, formula passata da altra procedura 
+% GEN AND WRITE, SINGLE LANG, "formula passed from another procedure" [it->en]
 gen_and_write_nsm_sent(Lang,Grammar,Format,Indent+Label:S,Last) :-
 	generic_gen_sentence(Lang,Grammar,S,PF),
 	!,
@@ -599,7 +600,7 @@ gen_and_write_nsm_sent(Lang,Grammar,Format,ct(group,GROUP),Last) :-
 	nl.
 
 
-% LEGGE FORMULE E GENERA FRASI
+% "FORMULA LAW AND GENERATE PHRASES" [it->en]
 read_gen_write_nsm_sent(Format) :-
 	read(Formula),
 	global_par:current_lang(L),
@@ -624,7 +625,7 @@ is_last(end,last) :- !.
 is_last(_,no_last).
 
 
-% BACKEND PER NSM (scrive in formato NSM)
+% BACKEND PER NSM ("writes in NSM format" [it->en])
 write_nsm_parse(_Format,[]).
 write_nsm_parse(Format,[I+L:noparse(S)|T]) :-
 	!,
@@ -834,7 +835,7 @@ get_l_name(L,L).
 
 
 	
-% prima prova L2, poi prova L1 (perché sto traducendo da L1 in L2)
+% "first try L2, then try L1 (because I'm translating from L1 to L2)" [it->en]
 print_text(Id,Format,_L1,L2,Text1) :-
 	global_par:mtext(Id,L2,Text),
 	!,
@@ -887,7 +888,7 @@ set_lang_mode(_L1,_L2,_Mode,mode(skip)).
 */
 
 	
-% write_automatic_numbers("s0",AT,AT) :- !. Fare S invece di s0
+% write_automatic_numbers("s0",AT,AT) :- !. "Do S instead of s0" [it->en]
 write_automatic_numbers([115,Num],AT,NAT,String) :-
 	!,
 	get_and_increment_number(Num,AT,NAT,[],String),

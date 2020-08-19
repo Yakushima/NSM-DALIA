@@ -2,6 +2,7 @@
 		print_grammar/0,
 		print_formatted_grammar/3
 	       ]).
+:- set_prolog_flag(double_quotes,codes).
 :- include(operators).
 
 :- use_module(rule_formatter).
@@ -329,7 +330,7 @@ print_dependencies(Lang,L2,Format,SectNum,SectNum1,I,Max,Level) :-
 	J is I + 1,
 	print_dependencies(Lang,L2,Format,SectNum,SectNum1,J,Max,NewLevel).
 
-check_level(_Lang,0,_I,1). % FARE
+check_level(_Lang,0,_I,1). % "DO" [it->en]
 check_level(Lang,Level,I,Level) :-
 	grammar:dep_threshold(Lang,Level,Max),
 	I < Max,

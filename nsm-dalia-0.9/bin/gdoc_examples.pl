@@ -2,6 +2,7 @@
 			 get_examples/3,
 			 write_examples/4
 			]).
+:- set_prolog_flag(double_quotes,codes).
 
 
 /** <module> Analysis and translation of example sentences

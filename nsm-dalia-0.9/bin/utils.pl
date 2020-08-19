@@ -47,11 +47,12 @@
 	do_actions/2,
 	read_ident/3
 	]).	
+:- set_prolog_flag(double_quotes,codes).
 	
 
 :- include('operators.pl').
 
-% USATE DA TOKI PONA
+% "USE FROM TOKI PONA" [it->en]
 
 get_next_word(String,Rest,Word) :-
 	get_next_word1(String,Rest1,Word1),
@@ -110,16 +111,16 @@ sublist_aux([C|L1],[C|L2],NewL2) :-
 
 %%	put_string(+String) is det
 %
-%	Wrhites a string (implemented as a list of codes)
+%	Writes a string (implemented as a list of codes)
 %	to the terminal or to a file (if global_par:current_output_file/1
 %       is set).
 %	
-put_string([]). % VERSIONE DI PARSE_TP.PL
+put_string([]). % "VERSION OF PARSE_TP.PL" [it->en]
 put_string([C|String]) :-
 	put_code(C),
 	put_string(String).
 
-put_msg_string([]). % VERSIONE DI PARSE_TP.PL
+put_msg_string([]). % "VERSION OF PARSE_TP.PL" [it->en]
 put_msg_string([C|String]) :-
 	var(C),
 	!,

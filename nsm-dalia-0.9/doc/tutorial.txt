@@ -19,7 +19,7 @@
 
 */
 
-			NSM-DALIA version 0.8
+			NSM-DALIA version 0.9
 
 NSM-DALIA is a natural language parser and generator, which is
 especially tailored to the NSM subset of a natural language, but can
@@ -32,20 +32,25 @@ modules, will follow.
 
 NSM-DALIA has (so far) only a command-line interface. To run
 NSM-DALIA, open the file "dalia-cline.tm" into the SWI-PROLOG
-interpreter.
+interpreter, by double-clicking the file.
 
-**PROBLEM: there is no dalia-cline.tm in this repo. Something like
-the described effect can be achieved by entering this:
+NOTE: dalia-cline.tm seems to be missing from
+the zip archive for the 0.9 version. The following instructions
+instructions work for SWI-Prolog up to version 8.0.0, on Windows,
+using Cygwin for the shell commands, just by starting SWI-Prolog
+with the command "swipl" -- just make sure that this is added
+to your path. Untested on Linux.
 
-   ['dalia_cline'].
+(According to the original instructions in the .zip file at
+http://www.vilnergoy.org/nsm/index.html:
+Linux users will start a console, use a cd command to
+move to the NSM-DALIA-0.9 directory, and load dalia-cline.tm
+into SWI-PROLOG with the command "pl dalia-cline.tm").
+Since this file is missing, you can start prolog and
+instead type this at the command prompt "?-", after
+making sure you're in the right directory: 
 
-This will yield some warnings. Proceed by ignoring them.**
-
-(By double-clicking the file; LINUX users will start a
-console, use a cd command to move to the NSM-DALIA-0.8 directory, and
-load dalia-cline.tm into SWI-PROLOG with the command "pl dalia-cline.tm").
-
-PROBLEM: this repo is for NSM-DALIA-0.9, not 0.8.
+?- ['dalia_cline.pl']. 
 
 When NSM-DALIA is launched, a command-line console will pop up,
 printing the usual "GNU-welcome" message, and then prompting the
@@ -53,9 +58,7 @@ user:
 
 DALIA>
 
-**PROBLEM: forging onward by deviating from the instructions above,
-just starting SWI Prolog won't give a DALIA prompt. Entering "['dalia_cline']."
-doesn't yield a DALIA prompt.**
+Note: the "DALIA>" prompt may appear only after you issue a command.
 
 Now you can control the program by entering commands at the prompt,
 followed by <ENTER>. Most commands have a short form for quick typing,
@@ -69,14 +72,10 @@ you type:
 
 DALIA> l(eng).
 
-**PROBLEM: l(eng) yields "false". Proceed anyway.**
-
 NSM-DALIA will answer:
 
  ** English language module loaded.
  ** Current L1 set to English
-
-**PROBLEM: these messages aren't seen. Only "false."
 
 Now you can:
 -parse English-NSM sentences, producing NSM-PROLOG formulas ("ps" command),
@@ -86,22 +85,18 @@ Now you can:
 For example, you can type:
 DALIA> ps("I am doing something good").
 
-**PROBLEM: ps simply returns "false".
-
 NSM-DALIA will output:
-ct(s, s(e, e, e, e, e, p(i(do), [a:sp(e, e, sing(e), [], me), o:sp(e, e, sing(e), [good], something(0)), d:e, c:e, i:e]), e, e))
+ct(s, s(e, e, e, e, e, p(i(do), [a:sp(e, e, e, [], d(me)), o:sp(e, e, e, [good], something(thing)), d:e, c:e, i:e, b:e]), e, e)).
 
 which is the corresponding NSM-PROLOG formula.
 
 By typing:
-DALIA> gs(ct(s, s(e, e, e, e, e, p(i(do), [a:sp(e, e, sing(e), [], someone(0)), o:sp(e, e, sing(e), [good], something(0)), d:e, c:e, i:e]), e, e)).
+DALIA> gs(ct(s, s(e, e, e, e, e, p(i(do), [a:sp(e, e, sing(e), [], someone(0)), o:sp(e, e, sing(e), [good], something(0)), d:e, c:e, i:e]), e, e))).
 
 you get the following output:
 
   someone  is  doing  something  good
-
-PROBLEM: this only gives "ERROR: Syntax error. Operator expected."
- 
+  
 Now suppose you want to translate from English NSM to, say, Tok Pisin
 NSM. Your L1 is set to English; to load and set the L2 module, use the
 "l2" command:
@@ -113,11 +108,7 @@ DALIA> l2(tpi).
  ** Current L2 set to Tok Pisin
 
 Of course, this will work when a Tok Pisin module will be written (I
-am writing one). For the time being, the only answer you will get is:
-
- ** No "tpi" language module found
-
-**PROBLEM: this only yields "false".**
+am writing one). 
 
 Supposing you have loaded a Tok Pisin module as L2, if later you want
 to translate from Tok Pisin into English, you only need to switch
@@ -126,12 +117,14 @@ between L1 and L2. Use the set_language commands:
 DALIA> sl1(tpi).
 
  ** Current L1 set to Tok Pisin
+ 
+Note: this currently fails.
 
 DALIA> sl2(eng).
 
  ** Current L2 set to English
 
-PROBLEM: these also yield "false".
+Without the prompt, the above command works.
 
 However, you can also effect this by typing the "sl"
 ("switch-languages") command. If you type it now (when L1 is Tok Pisin
@@ -141,18 +134,16 @@ DALIA> sl.
  ** Current L1 set to English
  ** Current L2 set to Tok Pisin
 
-PROBLEM: only yields "false".
+This also seems to work, even without the DALIA prompt.
 
 NSM-DALIA can get its input from files. You can write a special
 NSM-input file, which is a simple text file with some tags added (see
 the included documetation file "NSM-files.txt"). For example, if you type:
 
-DALIA> pf("demo/sentences.txt").
+DALIA> pf("demo/eng_sentences.txt").
 
-NSM-DALIA will read and parse the file "sentences.txt", included in
+NSM-DALIA will read and parse the file "eng_sentences.txt", included in
 the directory "demo".
-
-PROBLEM: also yields only "false".
 
 NSM input files allows the user to write NSM texts in the standard
 format (with no punctuation, no capital letters at the beginnning of
@@ -164,10 +155,9 @@ You can also redirect your output to files:
 DALIA> so("outputfile.txt").
  **  Output file set to "outputfile.txt"
 
-DALIA> pf("demo/sentences.txt").
+DALIA> pf("demo/eng_sentences.txt").
  **  Output written to file "outputfile.txt"
 
-By doing this, you get a text file (outputfile.txt) with the the
+By doing this, you get a text file (outputfile.txt) with the
 parsing of the file "sentences.txt".
-
 

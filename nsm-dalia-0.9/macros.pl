@@ -1,3 +1,4 @@
+:- set_prolog_flag(double_quotes, codes).
 macro(engl) :-
 	l(eng),
 	ro("l_out.rtf"),

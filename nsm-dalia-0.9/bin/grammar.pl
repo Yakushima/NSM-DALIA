@@ -24,11 +24,12 @@
 		  load_lang/2,
 		  build_lang/2
 		 ]).
+:- set_prolog_flag(double_quotes,codes).
 	  
 /** <module> Grammar loader
 
 */
-:- include('operators.pl'). %IMPORTANTE PER LEGGERE LE GRAMMATICHE
+:- include('operators.pl'). %"IMPORTANT TO READ GRAMMAR" [it->en Google]
 
 :- include('buildallo.pl').
 
@@ -817,7 +818,7 @@ load_rule(ms ::: Formula,Lang,Dial) :-
 	asserta(morph_seq(Lang:Dial,Formula)),
 	read_grammar(Lang,Dial).
 
-% ms e wf sono la stessa cosa
+% "ms and wf are the same thing" [it->en]
 load_rule(Dial2 :: wf ::: Formula,Lang,Dial) :-
 	is_a(Lang,Dial,Dial2),
 	!,
@@ -1314,9 +1315,14 @@ pass_through_hist(Lang) :-
 	retractall(hm(Lang,_,_,_,_)),
 	derive_lex(Lang,Dict),
 	retractall(historic_pf(Lang,_,_,_,_)).
-% quando farò il formattatore di gramm storiche:
-% la lista Dict1 e Dict2: assert_list cambiando m in qualche forma di hm ( es. dict1 con con numero 0)
-% non retract più historic_pf
+/*
+Translation (Google) of Francesco's comment in Italian:
+"When I do the formatter of historical grammars:
+the list Dict1 and Dict2: assert_list changing m to some form of hm
+(eg dict1 with number 0)."
+
+"Don't retract more historic_pf"
+*/
 
 
 
@@ -1375,7 +1381,7 @@ close_empty([_|L]) :-
 compile_morph_seq(Lang) :-
 	findall(WF,morph_seq(Lang,WF),WF_L),
 	compile_wf_lists(Lang,WF_L).
-%	retractall(morph_seq(Lang,_)). lasciarla per formattatore
+%	retractall(morph_seq(Lang,_)). "leave it for formatter" [it->en]
 
 compile_wf_lists(_Lang,[]).
 compile_wf_lists(Lang,[WF|List]) :-	

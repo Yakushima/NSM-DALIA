@@ -53,6 +53,7 @@
 			   pg/0,
 			   swtt/1
 			  ]).
+:- set_prolog_flag(double_quotes,codes).
 
 :- use_module(nsmdalia).
 :- use_module(file_reader).
@@ -639,12 +640,12 @@ pg :- gdoc:print_grammar.
 end_of_file :- halt.
 
 write_gnu :-
-	gpl("DALIA","1.0","2009","Francesco Zamblera",S),
+	gpl("DALIA","0.9","2009","Francesco Zamblera",S),
 	put_string(S),
 	nl.
 
 write_prompt :-
-	nl,write('DALIA> ').
+	nl,write('DALIA> '),flush_output.
 
 
 perform(stop) :-
@@ -684,5 +685,5 @@ loop :-
 %       Procedure run calls init/0, then enters the main loop.
 %       Fails on bugs
 %       
-run :- init,loop.
+run :- init, loop.
 

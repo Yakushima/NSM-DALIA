@@ -19,8 +19,9 @@
 
 */
 
+:- set_prolog_flag(double_quotes,codes).
 
-% VERSIONE STANDALONE DEL CHART-PARSER E GENERATORE TOP-DOWN XSTAGMEMICO
+% "STANDALONE CHART-PARSER VERSION AND TOP-DOWN XSTAGMEMIC GENERATOR" [it->en]
 
 :- op(700,xfx,<>).
 :- op(700,xfx,=>).
@@ -93,7 +94,7 @@ find_tagmeme(Lang,m(Class,Exponent),t(Name,[?Slot:Class/Exponent|P],A,C)) :-
 
 
 
-% Presa da morph.pl
+% "Taken from morph.pl" [it->en]
 check_syntagmeme(morpheme(Slot,Class,Exponent),[Slot:Class/Exponent|P],P,_A) :- 
 	!.
 check_syntagmeme(morpheme(Slot,Class,Exponent),[?Slot:Class/Exponent|P],P,_A) :-
