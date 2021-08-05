@@ -39,13 +39,18 @@ the zip archive for the 0.9 version. The following instructions
 instructions work for SWI-Prolog up to version 8.0.0, on Windows,
 using Cygwin for the shell commands, just by starting SWI-Prolog
 with the command "swipl" -- just make sure that this is added
-to your path. Untested on LINUX.
+to your path. Untested on Linux.
 
 (According to the original instructions in the .zip file at
 http://www.vilnergoy.org/nsm/index.html:
-LINUX users will start a console, use a cd command to
+Linux users will start a console, use a cd command to
 move to the NSM-DALIA-0.9 directory, and load dalia-cline.tm
 into SWI-PROLOG with the command "pl dalia-cline.tm").
+Since this file is missing, you can start prolog and
+instead type this at the command prompt "?-", after
+making sure you're in the right directory: 
+
+?- ['dalia_cline.pl']. 
 
 When NSM-DALIA is launched, a command-line console will pop up,
 printing the usual "GNU-welcome" message, and then prompting the
