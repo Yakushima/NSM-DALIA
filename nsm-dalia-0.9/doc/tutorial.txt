@@ -46,11 +46,14 @@ http://www.vilnergoy.org/nsm/index.html:
 Linux users will start a console, use a cd command to
 move to the NSM-DALIA-0.9 directory, and load dalia-cline.tm
 into SWI-PROLOG with the command "pl dalia-cline.tm").
-Since this file is missing, you can start prolog and
+Since the dalia-cline.tm file is missing, you can start prolog and
 instead type this at the command prompt "?-", after
 making sure you're in the right directory: 
 
 ?- ['dalia_cline.pl']. 
+
+You can use the SWI-Prolog "cd()" function to move to the directory
+where dalia_cline.pl.
 
 When NSM-DALIA is launched, a command-line console will pop up,
 printing the usual "GNU-welcome" message, and then prompting the
